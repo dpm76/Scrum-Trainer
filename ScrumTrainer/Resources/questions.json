@@ -1,0 +1,3803 @@
+[
+  {
+    "question": "What is the main responsibility of the Product Owner? (Q1)",
+    "answers": [
+      "To manage the team",
+      "To maximize the value of the product",
+      "To create technical tasks",
+      "To assign work"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Which Scrum event is time-boxed to 15 minutes? (Q2)",
+    "answers": [
+      "Sprint Planning",
+      "Sprint Review",
+      "Daily Scrum",
+      "Sprint Retrospective"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master removes impediments for the team. (Q3)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the output of the Sprint Planning? (Q4)",
+    "answers": [
+      "Product Backlog",
+      "Sprint Backlog",
+      "Release Plan",
+      "Increment"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Scrum Teams are self-managing and cross-functional. (Q5)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Who is accountable for the Increment? (Q6)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Which artifact represents work for a single Sprint? (Q7)",
+    "answers": [
+      "Product Backlog",
+      "Sprint Backlog",
+      "Burn-down Chart",
+      "Definition of Done"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Product Owner can change the Sprint Backlog during a Sprint. (Q8)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the purpose of the Sprint Review? (Q9)",
+    "answers": [
+      "To inspect the Increment and adapt the Product Backlog",
+      "To inspect team performance",
+      "To plan the next Sprint",
+      "To define the release schedule"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "Who attends the Daily Scrum? (Q10)",
+    "answers": [
+      "Product Owner and Scrum Master",
+      "Only Developers",
+      "All Stakeholders",
+      "The entire Scrum Team"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What happens during the Sprint Retrospective? (Q11)",
+    "answers": [
+      "The team plans the next Sprint",
+      "The team inspects itself and plans improvements",
+      "Stakeholders review the Increment",
+      "Developers write new user stories"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Scrum requires a Burn-down Chart. (Q12)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What does the Definition of Done provide? (Q13)",
+    "answers": [
+      "A checklist of tasks to assign",
+      "Clarity on when work is complete",
+      "A list of user requirements",
+      "A schedule for releases"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who can change the Product Backlog? (Q14)",
+    "answers": [
+      "Only the Product Owner",
+      "Only the Scrum Master",
+      "The Developers",
+      "Anyone on the Scrum Team"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "True or False: The Scrum Master is responsible for maximizing the product value. (Q15)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is a key characteristic of Scrum Teams? (Q16)",
+    "answers": [
+      "They are hierarchical",
+      "They are cross-functional and self-managing",
+      "They follow a fixed task list",
+      "They depend on a manager"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "When is work considered 'done' in Scrum? (Q17)",
+    "answers": [
+      "When it is tested",
+      "When the Product Owner accepts it",
+      "When it meets the Definition of Done",
+      "When all developers agree"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum is a methodology with strict rules. (Q18)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the goal of Sprint Planning? (Q19)",
+    "answers": [
+      "To assign tasks",
+      "To decide which Product Backlog items to include and how to do the work",
+      "To estimate work effort",
+      "To write test cases"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who decides how work is done during the Sprint? (Q20)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "When can the Product Backlog be updated? (Q21)",
+    "answers": [
+      "Only during Sprint Planning",
+      "Any time by the Product Owner",
+      "Only at the end of the Sprint",
+      "Only with stakeholder approval"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Developers must follow the Scrum Master’s instructions during the Sprint. (Q22)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who ensures that Scrum is understood and enacted? (Q23)",
+    "answers": [
+      "The Product Owner",
+      "The Scrum Master",
+      "The Developers",
+      "The Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is an Increment in Scrum? (Q24)",
+    "answers": [
+      "A complete list of tasks",
+      "A release plan",
+      "A usable piece of software that adds value",
+      "A test suite"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum defines specific roles outside the Scrum Team. (Q25)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the focus of the Daily Scrum? (Q26)",
+    "answers": [
+      "Reporting to the Scrum Master",
+      "Inspecting progress toward the Sprint Goal",
+      "Assigning tasks",
+      "Discussing personal issues"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who can cancel a Sprint? (Q27)",
+    "answers": [
+      "Scrum Master",
+      "Developers",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Multiple Scrum Teams working on the same Product must have one shared Product Backlog. (Q28)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is required for a successful Sprint Review? (Q29)",
+    "answers": [
+      "Complete list of assigned tasks",
+      "Working Increment ready for inspection",
+      "Approved release plan",
+      "Updated Gantt chart"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who owns the Sprint Backlog? (Q30)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Definition of Done can evolve over time. (Q31)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What does transparency in Scrum mean? (Q32)",
+    "answers": [
+      "Managers know what the team is doing",
+      "All decisions are made publicly",
+      "All artifacts are visible and understood by all",
+      "Progress is reported weekly"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for adapting the process during the Sprint Retrospective? (Q33)",
+    "answers": [
+      "Scrum Master",
+      "The whole Scrum Team",
+      "Product Owner",
+      "External Coach"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Scrum is best used only for software development. (Q34)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the recommended size of a Scrum Team? (Q35)",
+    "answers": [
+      "3–9 team members",
+      "Over 10 members",
+      "2 members",
+      "Unlimited"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "When is a new Increment created? (Q36)",
+    "answers": [
+      "After each task",
+      "At the end of the project",
+      "Every Sprint",
+      "During the Sprint Review"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Stakeholders attend the Daily Scrum to give feedback. (Q37)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What happens if the work turns out to be more than the Developers expected? (Q38)",
+    "answers": [
+      "The Scrum Master adds more time",
+      "The Sprint Goal is changed",
+      "The team collaborates to meet the goal or adjusts scope",
+      "The Product Owner cancels the Sprint"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for monitoring progress toward the Sprint Goal? (Q39)",
+    "answers": [
+      "Scrum Master",
+      "Developers",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is empiricism in Scrum based on? (Q40)",
+    "answers": [
+      "Processes and planning",
+      "Detailed upfront design",
+      "Experience, observation, and experimentation",
+      "Waterfall planning"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is a Sprint Goal? (Q41)",
+    "answers": [
+      "A detailed task list",
+      "A summary of the Product Backlog",
+      "The single objective for the Sprint",
+      "The release plan"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Product Owner must be present at all Daily Scrums. (Q42)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who is accountable for defining the Sprint Goal? (Q43)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Scrum Team"
+    ],
+    "correct": [3]
+  },
+  {
+    "question": "What is the role of the Scrum Master during Sprint Planning? (Q44)",
+    "answers": [
+      "Assign tasks to Developers",
+      "Ensure the meeting happens and everyone understands its purpose",
+      "Update the Product Backlog",
+      "Write user stories"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: A Sprint can be extended if the work is not finished. (Q45)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is inspected during the Sprint Review? (Q46)",
+    "answers": [
+      "Team velocity",
+      "Increment of work completed",
+      "Daily Scrum notes",
+      "Test coverage"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who creates the Definition of Done? (Q47)",
+    "answers": [
+      "Scrum Master",
+      "Scrum Team",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master participates as a peer team member in Sprint Retrospectives. (Q48)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "When should a Sprint be canceled? (Q49)",
+    "answers": [
+      "If the Scrum Master is unavailable",
+      "If the Sprint Backlog changes",
+      "If the Sprint Goal becomes obsolete",
+      "If a new project starts"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for ensuring work meets the Definition of Done? (Q50)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should the Scrum Team do if they discover a better way of working? (Q51)",
+    "answers": [
+      "Ignore it until the project ends",
+      "Wait for management approval",
+      "Adapt their processes accordingly",
+      "Ask the Product Owner to modify the backlog"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum Teams should strive to become more predictable by delivering the same velocity every Sprint. (Q52)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is a characteristic of a high-performing Scrum Team? (Q53)",
+    "answers": [
+      "They avoid collaboration",
+      "They follow strict instructions from managers",
+      "They are self-organizing and continuously improving",
+      "They rely on individual effort"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is meant by 'cross-functional' in Scrum? (Q54)",
+    "answers": [
+      "Team members are from different departments",
+      "Team includes testers only",
+      "Team has all skills needed to deliver a product increment",
+      "Each person only does one type of work"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Developers can change the Sprint Goal during the Sprint if needed. (Q55)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What should happen if work selected for the Sprint cannot be finished? (Q56)",
+    "answers": [
+      "It is carried over to the next Sprint automatically",
+      "It is removed without discussion",
+      "It is reviewed during the Sprint Review",
+      "It is considered done anyway"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What are the three pillars of Scrum? (Q57)",
+    "answers": [
+      "Scope, Time, Budget",
+      "Transparency, Inspection, Adaptation",
+      "Backlog, Sprint, Review",
+      "Vision, Roadmap, Release"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Scrum requires a fixed Sprint length. (Q58)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the maximum length of a Sprint? (Q59)",
+    "answers": [
+      "1 week",
+      "2 weeks",
+      "1 month",
+      "There is no limit"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who defines the work necessary to turn Product Backlog items into a Done Increment? (Q60)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What does the Product Backlog represent? (Q61)",
+    "answers": [
+      "A list of completed tasks",
+      "All known work required for the product",
+      "The project plan",
+      "Tasks assigned to team members"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master is responsible for writing user stories. (Q62)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who can attend the Sprint Review? (Q63)",
+    "answers": [
+      "Only the Scrum Team",
+      "Only Stakeholders",
+      "The Scrum Team and key stakeholders",
+      "Only the Product Owner"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the time-box for a Sprint Planning meeting for a 1-month Sprint? (Q64)",
+    "answers": [
+      "2 hours",
+      "4 hours",
+      "8 hours",
+      "1 day"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What describes the Development Team’s plan for achieving the Sprint Goal? (Q65)",
+    "answers": [
+      "Product Backlog",
+      "Definition of Done",
+      "Sprint Backlog",
+      "Increment"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master has authority over the Product Owner. (Q66)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What best describes Scrum? (Q67)",
+    "answers": [
+      "A set of technical practices",
+      "A project management methodology",
+      "A lightweight framework for complex product development",
+      "A detailed guide with exact processes"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is inspected at the Daily Scrum? (Q68)",
+    "answers": [
+      "The team’s happiness",
+      "Progress toward the Sprint Goal",
+      "Completed Product Backlog Items",
+      "Next Sprint’s plan"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Sprint Backlog is created and maintained by the Product Owner. (Q69)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who decides when to release an Increment? (Q70)",
+    "answers": [
+      "Scrum Master",
+      "Developers",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should be the outcome of each Sprint? (Q71)",
+    "answers": [
+      "An updated Product Backlog",
+      "A list of bugs",
+      "A potentially releasable Increment",
+      "A revised Sprint Goal"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master must be present at the Sprint Planning. (Q72)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What does the term 'Done' mean in Scrum? (Q73)",
+    "answers": [
+      "The task is written",
+      "The Product Owner reviewed the work",
+      "Work meets the agreed Definition of Done",
+      "The team says it's finished"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for stakeholder communication? (Q74)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Work selected for a Sprint must not be changed during that Sprint. (Q75)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the role of the Scrum Master regarding the Scrum framework? (Q76)",
+    "answers": [
+      "To write technical documentation",
+      "To assign user stories",
+      "To ensure Scrum is understood and enacted",
+      "To manage deadlines"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "When is the Sprint Goal created? (Q77)",
+    "answers": [
+      "During Sprint Review",
+      "During Sprint Planning",
+      "During Daily Scrum",
+      "At product inception"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Every Sprint must produce a finished Increment. (Q78)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What defines the scope of work for the Sprint? (Q79)",
+    "answers": [
+      "Product Backlog",
+      "Sprint Goal",
+      "Sprint Backlog",
+      "Release Plan"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who determines how to turn the Product Backlog into valuable Increments? (Q80)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum framework includes roles, events, and artifacts. (Q81)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What should the team inspect during the Sprint Retrospective? (Q82)",
+    "answers": [
+      "Progress toward the release date",
+      "Team happiness scores",
+      "Team processes and collaboration",
+      "Product Backlog priorities"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who creates the Sprint Backlog? (Q83)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Product Owner is the only person who can add items to the Product Backlog. (Q84)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What should the Developers do if they finish early during a Sprint? (Q85)",
+    "answers": [
+      "Take a break",
+      "Ask the Scrum Master for more work",
+      "Collaborate with the Product Owner to adapt the Sprint Backlog",
+      "Start the next Sprint"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for ROI (Return on Investment)? (Q86)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is one benefit of a cross-functional team? (Q87)",
+    "answers": [
+      "Tasks can be outsourced",
+      "The team can deliver a usable Increment without depending on others",
+      "The Product Owner can skip meetings",
+      "Velocity increases immediately"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Product Owner is allowed to attend the Daily Scrum. (Q88)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "When should the Sprint Backlog be updated? (Q89)",
+    "answers": [
+      "Only during Sprint Planning",
+      "Whenever new work is identified",
+      "Once a day",
+      "Only with Scrum Master approval"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is the main output of the Sprint Review? (Q90)",
+    "answers": [
+      "A signed-off report",
+      "Updated Definition of Done",
+      "Adapted Product Backlog",
+      "Sprint Retrospective agenda"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Developers are allowed to change the Sprint Backlog during the Sprint. (Q91)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is a key purpose of the Definition of Done? (Q92)",
+    "answers": [
+      "To define the next Sprint Goal",
+      "To ensure shared understanding of what 'done' means",
+      "To limit the Sprint Backlog scope",
+      "To assign tasks to team members"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What role is responsible for maximizing the product value? (Q93)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: There must always be a Project Manager in a Scrum Team. (Q94)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who determines the length of the Sprint? (Q95)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Scrum Team",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the ideal outcome of the Sprint Retrospective? (Q96)",
+    "answers": [
+      "A longer Sprint",
+      "More user stories",
+      "Identified improvements for the next Sprint",
+      "Updated Scrum roles"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum can be used in domains other than software development. (Q97)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is inspected at the Sprint Review? (Q98)",
+    "answers": [
+      "Definition of Done",
+      "Work completed during the Sprint",
+      "Next Sprint tasks",
+      "Individual performance"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who ensures the Sprint happens with purpose and productivity? (Q99)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What can lead to poor transparency in Scrum? (Q100)",
+    "answers": [
+      "Unclear Definition of Done",
+      "Daily Scrums",
+      "Sprint Reviews",
+      "Having a Product Backlog"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "True or False: The Product Owner manages the Developers directly. (Q101)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is one way the Scrum Master serves the Product Owner? (Q102)",
+    "answers": [
+      "By assigning tasks to Developers",
+      "By ordering the Product Backlog",
+      "By helping understand and practice agility",
+      "By controlling release schedules"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for the Product Backlog? (Q103)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Developers are not allowed to interact with stakeholders. (Q104)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "When should the Product Backlog be refined? (Q105)",
+    "answers": [
+      "Only before a Sprint Planning",
+      "At the end of each Sprint",
+      "Regularly as needed",
+      "Only during a release cycle"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the best description of Sprint Backlog? (Q106)",
+    "answers": [
+      "It is a task list assigned by the Product Owner",
+      "It is the Product Backlog for the whole project",
+      "It is the selected items for the Sprint and a plan to deliver them",
+      "It is the manager’s roadmap"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Only the Scrum Master can facilitate the Sprint Retrospective. (Q107)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What happens if a Developer is absent during a Sprint? (Q108)",
+    "answers": [
+      "The Sprint is canceled",
+      "The team adjusts and continues collaborating",
+      "The Scrum Master replaces them",
+      "The work is postponed"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What best describes a 'Done' Increment? (Q109)",
+    "answers": [
+      "A list of tasks marked as finished",
+      "A usable product that meets the Definition of Done",
+      "A plan for future work",
+      "An increment approved by stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The team must demonstrate all completed work in the Sprint Review. (Q110)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What happens if the Sprint Goal becomes obsolete? (Q111)",
+    "answers": [
+      "The Sprint continues as planned",
+      "The Sprint is extended",
+      "The Product Owner may cancel the Sprint",
+      "The Developers vote to cancel the Sprint"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum requires a specific set of engineering practices. (Q112)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who can attend the Sprint Retrospective? (Q113)",
+    "answers": [
+      "Only the Developers",
+      "Only the Product Owner",
+      "The Scrum Team",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "When should the team update the Definition of Done? (Q114)",
+    "answers": [
+      "Only at project start",
+      "Any time they agree it needs improvement",
+      "Never—it must stay fixed",
+      "At the Sprint Review"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Scrum Teams should deliver an Increment every Sprint. (Q115)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What does Scrum encourage regarding changes during the Sprint? (Q116)",
+    "answers": [
+      "Allow changes to goals and Sprint Backlog",
+      "Allow changes to team roles",
+      "Avoid all changes",
+      "Changes that do not endanger the Sprint Goal"
+    ],
+    "correct": [3]
+  },
+  {
+    "question": "Who is accountable for delivering a potentially releasable Increment? (Q117)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: A Scrum Team must use user stories in the Product Backlog. (Q118)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the most important characteristic of the Product Backlog? (Q119)",
+    "answers": [
+      "It is detailed and technical",
+      "It is prioritized and transparent",
+      "It is written in Gantt chart format",
+      "It is only visible to the Product Owner"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who is responsible for tracking the work during the Sprint? (Q120)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master has authority to manage the team. (Q121)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What type of work is represented in the Product Backlog? (Q122)",
+    "answers": [
+      "Only features",
+      "Only bugs",
+      "All work necessary on the product",
+      "Only business requirements"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is one responsibility of the Product Owner during Product Backlog refinement? (Q123)",
+    "answers": [
+      "Estimate tasks",
+      "Break items into tasks",
+      "Clarify and prioritize items",
+      "Assign work to Developers"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who defines how work is done within a Sprint? (Q124)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: A single Product Owner may support multiple Scrum Teams working on the same product. (Q125)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which artifact reflects the work forecast for a Sprint? (Q126)",
+    "answers": [
+      "Sprint Goal",
+      "Sprint Backlog",
+      "Increment",
+      "Product Backlog"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is one reason to cancel a Sprint? (Q127)",
+    "answers": [
+      "Team is behind schedule",
+      "Product Owner’s business objective changed",
+      "Stakeholders request it",
+      "Team has too many bugs"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Velocity must always increase in Scrum. (Q128)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the purpose of the Scrum Guide? (Q129)",
+    "answers": [
+      "To define mandatory tools",
+      "To describe a framework for product development",
+      "To assign roles in a company",
+      "To replace agile principles"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is most important for effective Product Backlog refinement? (Q130)",
+    "answers": [
+      "High technical detail",
+      "Manager involvement",
+      "Collaboration between Product Owner and Developers",
+      "Fixed scope definition"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Each Scrum artifact contains a commitment. (Q131)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What commitment is associated with the Product Backlog? (Q132)",
+    "answers": [
+      "Definition of Done",
+      "Sprint Goal",
+      "Product Goal",
+      "Roadmap"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What commitment is tied to the Sprint Backlog? (Q133)",
+    "answers": [
+      "Product Goal",
+      "Sprint Goal",
+      "Increment",
+      "Release Plan"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What commitment is associated with the Increment? (Q134)",
+    "answers": [
+      "Sprint Goal",
+      "Product Roadmap",
+      "Definition of Done",
+      "Business Case"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum is founded on empiricism and lean thinking. (Q135)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which of the following is NOT a Scrum value? (Q136)",
+    "answers": [
+      "Courage",
+      "Respect",
+      "Focus",
+      "Compliance"
+    ],
+    "correct": [3]
+  },
+  {
+    "question": "How often should the Product Goal be reviewed? (Q137)",
+    "answers": [
+      "Only at project start",
+      "During the Sprint Review",
+      "As progress is made on the Product Backlog",
+      "Once a year"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who owns the Product Goal? (Q138)",
+    "answers": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Multiple teams working on the same product must share one Product Goal. (Q139)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which of these best reflects the Scrum value of Commitment? (Q140)",
+    "answers": [
+      "Working overtime to meet deadlines",
+      "Making promises to customers",
+      "Dedication to the Sprint Goal and team decisions",
+      "Following instructions from management"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the purpose of a Product Goal? (Q141)",
+    "answers": [
+      "To define the next Sprint Goal",
+      "To align the Scrum Team on a longer-term objective",
+      "To schedule stakeholder meetings",
+      "To measure velocity"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Scrum encourages multitasking during the Sprint. (Q142)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the focus of the Sprint Goal? (Q143)",
+    "answers": [
+      "Describes all tasks to be completed",
+      "Defines the technical architecture",
+      "Gives the team a single objective for the Sprint",
+      "Outlines the release plan"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who decides what to work on in the upcoming Sprint? (Q144)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Scrum Team"
+    ],
+    "correct": [3]
+  },
+  {
+    "question": "What happens if the Product Goal is achieved? (Q145)",
+    "answers": [
+      "The Scrum Team continues working on it",
+      "A new Product Goal is defined",
+      "The product is archived",
+      "The project ends"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Sprint Goal can be adjusted after the Sprint starts. (Q146)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the best indicator that an Increment is usable? (Q147)",
+    "answers": [
+      "It was tested",
+      "It meets the Definition of Done",
+      "It was approved by the Scrum Master",
+      "It was added to the Product Backlog"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who ensures the integrity of the Scrum framework? (Q148)",
+    "answers": [
+      "Developers",
+      "Product Owner",
+      "Scrum Master",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is expected of Developers in Scrum? (Q149)",
+    "answers": [
+      "To report to the Scrum Master",
+      "To estimate Product Backlog items",
+      "To deliver a usable Increment each Sprint",
+      "To assign work to others"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Product Owner must attend all Scrum events. (Q150)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "True or False: Scrum requires artifacts to be transparent. (Q151)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "How does the Scrum Master support transparency? (Q152)",
+    "answers": [
+      "By updating the backlog",
+      "By assigning tasks",
+      "By ensuring artifacts are clearly understood",
+      "By delivering increments"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for making the work visible in the Sprint Backlog? (Q153)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: A Scrum Team can modify Scrum roles to fit their organization. (Q154)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What should a Scrum Team do when facing unexpected technical problems? (Q155)",
+    "answers": [
+      "Pause the Sprint",
+      "Request external resources",
+      "Collaborate and adapt to meet the Sprint Goal",
+      "Cancel the Sprint"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who decides the order of items in the Product Backlog? (Q156)",
+    "answers": [
+      "Developers",
+      "Scrum Master",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum is designed to be modified to include traditional project roles. (Q157)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the time-box for the Sprint Retrospective in a 1-month Sprint? (Q158)",
+    "answers": [
+      "1 hour",
+      "2 hours",
+      "3 hours",
+      "4 hours"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What does the Scrum Master do if the Developers miss their Daily Scrum? (Q159)",
+    "answers": [
+      "Conduct it on their behalf",
+      "Remove them from the team",
+      "Remind them of its importance and help improve discipline",
+      "Do nothing"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Stakeholders may attend the Sprint Retrospective. (Q160)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who ensures the Scrum Team has a clear Product Goal? (Q161)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Product Owner must accept or reject work during the Sprint Review. (Q162)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the primary use of the Increment? (Q163)",
+    "answers": [
+      "To plan the next Sprint",
+      "To measure team performance",
+      "To provide value and progress toward the Product Goal",
+      "To analyze technical debt"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What kind of feedback is expected during the Sprint Review? (Q164)",
+    "answers": [
+      "Financial reporting",
+      "Formal approval only",
+      "Constructive inspection and collaboration",
+      "Velocity calculations"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum defines exactly how the team should work. (Q165)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who owns quality in the Scrum Team? (Q166)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "QA Engineer"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the maximum time-box for the Sprint Review in a 1-month Sprint? (Q167)",
+    "answers": [
+      "1 hour",
+      "2 hours",
+      "4 hours",
+      "8 hours"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum values predictability over adaptability. (Q168)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "When is the Definition of Done applied? (Q169)",
+    "answers": [
+      "At the beginning of a Sprint",
+      "At the end of a Sprint",
+      "When a Product Backlog item is complete",
+      "During refinement"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What best supports frequent delivery of value in Scrum? (Q170)",
+    "answers": [
+      "Detailed project plans",
+      "Cross-functional teams and a working Increment",
+      "Strict role hierarchies",
+      "Continuous integration servers"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What should be done if stakeholders request changes during the Sprint? (Q171)",
+    "answers": [
+      "Pause the Sprint",
+      "Add them to the current Sprint",
+      "Negotiate and add to the Product Backlog",
+      "Ignore them"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Team must produce a release after every Sprint. (Q172)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What supports empiricism in Scrum? (Q173)",
+    "answers": [
+      "Weekly status reports",
+      "Detailed predictive plans",
+      "Regular inspection and adaptation",
+      "Strict governance"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who owns the Sprint Goal? (Q174)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Scrum Team",
+      "Developers"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Technical debt should be ignored during the Sprint. (Q175)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What can happen during the Daily Scrum? (Q176)",
+    "answers": [
+      "Reviewing progress and updating the Sprint Backlog",
+      "Product Owner gives new tasks",
+      "Scrum Master assigns work",
+      "Stakeholders inspect work"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "What kind of increments should be produced in each Sprint? (Q177)",
+    "answers": [
+      "Testable but incomplete",
+      "Potentially usable and done",
+      "Only UI changes",
+      "Backlog refinements"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Sprint Review is the final approval gate for work done. (Q178)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What happens if the team cannot meet the Sprint Goal? (Q179)",
+    "answers": [
+      "The Scrum Master cancels the Sprint",
+      "The Product Owner redefines the goal",
+      "The team discusses it during the Retrospective and learns from it",
+      "The Developers are replaced"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who facilitates Scrum events as requested or needed? (Q180)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Project Manager",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Scrum Teams can decide not to have a Scrum Master. (Q181)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is one of the five Scrum values? (Q182)",
+    "answers": [
+      "Flexibility",
+      "Transparency",
+      "Courage",
+      "Velocity"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should be inspected during a Sprint Review? (Q183)",
+    "answers": [
+      "Business conditions and the Increment",
+      "Only developer satisfaction",
+      "Scrum Guide updates",
+      "Test plans"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "Who can update the Product Backlog? (Q184)",
+    "answers": [
+      "Only Developers",
+      "Only Scrum Master",
+      "Anyone with the Product Owner’s permission",
+      "Only Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master is responsible for coaching the team. (Q185)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the goal of the Sprint? (Q186)",
+    "answers": [
+      "To finish all tasks",
+      "To complete backlog refinement",
+      "To create a valuable, usable Increment",
+      "To define a new roadmap"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What may result from poor Sprint Planning? (Q187)",
+    "answers": [
+      "Improved predictability",
+      "More accurate reporting",
+      "Missed Sprint Goal",
+      "Fewer retrospectives"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Product Owners must attend the Sprint Retrospective. (Q188)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What should the Developers do if they realize they selected too much work? (Q189)",
+    "answers": [
+      "Request a longer Sprint",
+      "Inform the Product Owner and adjust scope while focusing on the Sprint Goal",
+      "Cancel the Sprint",
+      "Add overtime"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who is responsible for maximizing ROI in Scrum? (Q190)",
+    "answers": [
+      "Scrum Master",
+      "Developers",
+      "Stakeholders",
+      "Product Owner"
+    ],
+    "correct": [3]
+  },
+  {
+    "question": "What does self-management mean in a Scrum Team? (Q191)",
+    "answers": [
+      "They assign tasks to each other",
+      "They follow orders from the Scrum Master",
+      "They choose how best to accomplish their work",
+      "They require manager approval for decisions"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master ensures the team delivers the Sprint Goal. (Q192)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What happens if a Developer does not participate in the Daily Scrum? (Q193)",
+    "answers": [
+      "The Scrum Master holds a separate meeting",
+      "That Developer misses the opportunity to inspect and adapt",
+      "The Daily Scrum is canceled",
+      "The Sprint is extended"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "When is work considered 'ready' for the Sprint Backlog? (Q194)",
+    "answers": [
+      "When the Product Owner approves it",
+      "When it is clear and understood by the Developers",
+      "When it's the top item",
+      "When stakeholders prioritize it"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Increment may include incomplete items. (Q195)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What should the Scrum Master do if stakeholders try to influence the Developers mid-Sprint? (Q196)",
+    "answers": [
+      "Invite them to the Daily Scrum",
+      "Allow them access to the team",
+      "Help protect the team from interruptions",
+      "Ask the Product Owner to resign"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who determines the composition of the Scrum Team? (Q197)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Organization",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum encourages teams to be cross-functional. (Q198)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What must be included in every Increment? (Q199)",
+    "answers": [
+      "A release date",
+      "Updated documentation",
+      "The Sprint Goal",
+      "Value and adherence to the Definition of Done"
+    ],
+    "correct": [3]
+  },
+  {
+    "question": "What describes a Scrum Team’s commitment to the Sprint Goal? (Q200)",
+    "answers": [
+      "They complete all tasks regardless of changes",
+      "They collaborate and adjust as needed to achieve it",
+      "They finish 100% of the Sprint Backlog",
+      "They update the Product Goal"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Definition of Done ensures that everyone has the same understanding of what 'done' means. (Q201)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What role helps everyone understand Scrum theory and practice? (Q202)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "When is an item in the Product Backlog considered 'ready'? (Q203)",
+    "answers": [
+      "When it is estimated",
+      "When it is fully documented",
+      "When it is clear and feasible for the team to begin work on it",
+      "When the Scrum Master approves it"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum allows changing team membership mid-Sprint. (Q204)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What happens to unfinished work at the end of the Sprint? (Q205)",
+    "answers": [
+      "It is automatically added to the next Sprint",
+      "It is removed permanently",
+      "It is reviewed and returned to the Product Backlog",
+      "It is counted as done"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What supports empirical process control in Scrum? (Q206)",
+    "answers": [
+      "Accurate documentation",
+      "Regular status meetings",
+      "Transparency, Inspection, Adaptation",
+      "Centralized decision-making"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master can be part of the Developers. (Q207)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the benefit of a time-boxed Sprint? (Q208)",
+    "answers": [
+      "It increases predictability and focus",
+      "It ensures the team works overtime",
+      "It allows stakeholders to change work at any time",
+      "It makes long-term planning easier"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "Who ensures that the Product Backlog is visible, transparent, and clear? (Q209)",
+    "answers": [
+      "Scrum Master",
+      "Developers",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Every Scrum event is an opportunity to inspect and adapt. (Q210)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "True or False: Developers may adjust their plan each day to reach the Sprint Goal. (Q211)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is a sign of good Sprint Planning? (Q212)",
+    "answers": [
+      "All work is completed in a single day",
+      "The team clearly understands what to deliver and how to do it",
+      "The Scrum Master assigns tasks to each Developer",
+      "The backlog is frozen"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who is responsible for ensuring a Sprint Review takes place? (Q213)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Scrum Team"
+    ],
+    "correct": [3]
+  },
+  {
+    "question": "True or False: The Scrum Master controls how the Developers carry out their work. (Q214)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is a potential risk of not having a shared Definition of Done? (Q215)",
+    "answers": [
+      "Delays in release planning",
+      "Misunderstanding of completed work",
+      "Increased productivity",
+      "More collaboration"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "When is the Product Goal considered achieved? (Q216)",
+    "answers": [
+      "When the Product Owner approves it",
+      "When a usable Increment meets the goal",
+      "When all bugs are fixed",
+      "When a stakeholder confirms delivery"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: A team can use Scrum even for hardware projects. (Q217)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Why is transparency important in Scrum? (Q218)",
+    "answers": [
+      "To help stakeholders track developer hours",
+      "To ensure decisions are based on the current state of artifacts",
+      "To meet regulatory requirements",
+      "To allow daily reporting"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What best describes the Sprint Review? (Q219)",
+    "answers": [
+      "A meeting to assign future work",
+      "A detailed task discussion",
+      "A collaborative working session to inspect the Increment",
+      "A formal sign-off ceremony"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for deciding how much work can be done in a Sprint? (Q220)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the best way to improve communication within a Scrum Team? (Q221)",
+    "answers": [
+      "Use more emails",
+      "Hold longer meetings",
+      "Promote openness and daily collaboration",
+      "Assign a communications officer"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum is based on empirical process control. (Q222)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the time-box for the Daily Scrum? (Q223)",
+    "answers": [
+      "30 minutes",
+      "15 minutes",
+      "1 hour",
+      "No time-box"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who updates the Sprint Backlog during the Sprint? (Q224)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Only the Product Owner can make changes to the Product Goal. (Q225)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What defines when work on a Product Backlog item is complete? (Q226)",
+    "answers": [
+      "Sprint Planning agreement",
+      "Definition of Done",
+      "Stakeholder approval",
+      "Scrum Master confirmation"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What should happen during Product Backlog refinement? (Q227)",
+    "answers": [
+      "Add more documentation",
+      "Break large items and clarify details",
+      "Assign work to Developers",
+      "Review test results"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: All Scrum Teams must use velocity to track progress. (Q228)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What does the Scrum Master do to support Developers? (Q229)",
+    "answers": [
+      "Assign work",
+      "Ensure transparency and remove impediments",
+      "Manage the team",
+      "Review technical decisions"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who is responsible for attending and contributing to the Sprint Review? (Q230)",
+    "answers": [
+      "Only the Scrum Master",
+      "Scrum Team and stakeholders",
+      "Only the Product Owner",
+      "Only project managers"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Sprint Goal must be defined before Sprint Planning begins. (Q231)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is one outcome of a good Sprint Retrospective? (Q232)",
+    "answers": [
+      "More backlog items",
+      "Longer meetings",
+      "Actionable improvements for the next Sprint",
+      "New team members"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who ensures that impediments are removed during the Sprint? (Q233)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Project Manager"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Sprint Planning must result in a fully detailed task list. (Q234)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What type of environment does Scrum encourage? (Q235)",
+    "answers": [
+      "Command and control",
+      "Collaborative and adaptive",
+      "Strictly hierarchical",
+      "Fully outsourced"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "When does the next Sprint begin? (Q236)",
+    "answers": [
+      "After the Product Owner approves the plan",
+      "Immediately after the previous Sprint ends",
+      "After a 2-day break",
+      "After the Sprint Retrospective is reviewed by stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What describes the purpose of the Sprint? (Q237)",
+    "answers": [
+      "To define long-term strategy",
+      "To complete tasks assigned by stakeholders",
+      "To create a usable Increment",
+      "To produce test documentation"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Product Owner can delegate work to the Developers. (Q238)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is a key benefit of using Scrum? (Q239)",
+    "answers": [
+      "Predictable deadlines",
+      "Strict management oversight",
+      "Frequent delivery of value",
+      "Elimination of team meetings"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should Developers do if the Sprint Goal seems at risk? (Q240)",
+    "answers": [
+      "Ignore it and continue as planned",
+      "Immediately change the Sprint Goal",
+      "Collaborate and adapt the plan to meet the goal",
+      "Wait for the Product Owner to intervene"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should be the state of the Product Backlog? (Q241)",
+    "answers": [
+      "Private and locked",
+      "Detailed only for the next release",
+      "Evolving and transparent",
+      "Frozen after Sprint Planning"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum prescribes specific engineering practices. (Q242)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is expected from the Scrum Master in Daily Scrums? (Q243)",
+    "answers": [
+      "To run the meeting and take notes",
+      "To assign tasks",
+      "To ensure the meeting happens and stays within time-box",
+      "To update the Product Backlog"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who has the final say on ordering items in the Product Backlog? (Q244)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Definition of Done helps assess when work is complete. (Q245)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "When is the Sprint Backlog created? (Q246)",
+    "answers": [
+      "During Sprint Planning",
+      "Before the project starts",
+      "During the Sprint Retrospective",
+      "At the end of the Sprint"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "What is an essential activity during Sprint Planning? (Q247)",
+    "answers": [
+      "Prioritizing backlog items",
+      "Deciding the Sprint Goal and selecting work to meet it",
+      "Demonstrating completed work",
+      "Defining release dates"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Sprint Retrospective is optional in Scrum. (Q248)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who can add items to the Product Backlog? (Q249)",
+    "answers": [
+      "Only Product Owner",
+      "Only Scrum Master",
+      "Anyone, with Product Owner responsible for ordering",
+      "Only Developers"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What defines a good Product Backlog item? (Q250)",
+    "answers": [
+      "Detailed technical specification",
+      "Clearly expressed and understood by the team",
+      "Fully completed before being added",
+      "Assigned to a specific Developer"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Which of the following best describes the Scrum Master as a facilitator? (Q251)",
+    "answers": [
+      "They schedule team vacations",
+      "They assign backlog items",
+      "They help the team hold productive Scrum events",
+      "They report team status to management"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: A Scrum Master should tell the team how to solve problems. (Q252)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "In their role as a coach, what is a key activity of the Scrum Master? (Q253)",
+    "answers": [
+      "Conducting performance evaluations",
+      "Developing individual capabilities and team self-awareness",
+      "Approving leaves and time-off",
+      "Designing the product roadmap"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master should foster an environment of continuous learning. (Q254)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "How does the Scrum Master support the Developers as a servant leader? (Q255)",
+    "answers": [
+      "By assigning work",
+      "By resolving all conflicts personally",
+      "By enabling collaboration and autonomy",
+      "By approving their daily reports"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What does it mean for the Scrum Master to act as a teacher? (Q256)",
+    "answers": [
+      "Delivering mandatory Scrum training",
+      "Helping the team understand Scrum principles and values",
+      "Creating reports for management",
+      "Ensuring deadlines are enforced"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: One goal of the Scrum Master is to grow the team’s ability to self-manage. (Q257)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "As a protector, how should the Scrum Master handle outside interruptions? (Q258)",
+    "answers": [
+      "Let stakeholders ask questions anytime",
+      "Redirect distractions to maintain focus during the Sprint",
+      "Ignore them completely",
+      "Ask the Developers to handle them"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is a key sign that a Scrum Master is acting as a coach rather than a manager? (Q259)",
+    "answers": [
+      "They assign all work",
+      "They empower the team to find their own solutions",
+      "They escalate every issue",
+      "They approve every user story"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master is responsible for the personal growth of each team member. (Q260)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is one way the Scrum Master fosters organizational agility? (Q261)",
+    "answers": [
+      "By creating process documents",
+      "By introducing tools without team input",
+      "By helping others understand and embrace Scrum values and practices",
+      "By assigning KPIs to each Developer"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master supports the organization by coaching stakeholders. (Q262)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which approach is most appropriate for resolving conflict in a Scrum Team? (Q263)",
+    "answers": [
+      "Escalate immediately to HR",
+      "Avoid it and focus on the work",
+      "Facilitate open discussion and mutual respect",
+      "Ask the Scrum Master to discipline members"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is a key responsibility of the Scrum Master in scaling Scrum across teams? (Q264)",
+    "answers": [
+      "Controlling the Product Owner",
+      "Standardizing all team tools",
+      "Removing dependencies and enabling coordination",
+      "Approving budgets"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master should help develop a culture of accountability and trust. (Q265)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What outcome reflects effective Scrum Master coaching? (Q266)",
+    "answers": [
+      "More documentation",
+      "Team relies more on the Scrum Master",
+      "Increased team ownership and problem-solving",
+      "Increased meeting duration"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "In multi-team Scrum, what is the role of the Scrum Master? (Q267)",
+    "answers": [
+      "Enforce process conformity",
+      "Coordinate cross-team collaboration and dependency resolution",
+      "Report on all team progress",
+      "Act as lead architect"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Conflict in a team is always negative and should be avoided. (Q268)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is a powerful coaching question a Scrum Master might ask to enable team ownership? (Q269)",
+    "answers": [
+      "Who is to blame?",
+      "Why didn’t this work?",
+      "What could we try differently next time?",
+      "Do you want me to fix it?"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "How can a Scrum Master support continuous improvement? (Q270)",
+    "answers": [
+      "Enforcing fixed workflows",
+      "Limiting feedback to retrospectives",
+      "Creating a safe space for experimentation and reflection",
+      "Focusing on velocity charts"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is a sign that a Scrum Master is enabling self-organization in the team? (Q271)",
+    "answers": [
+      "Team waits for approval before acting",
+      "Team frequently asks the Scrum Master for decisions",
+      "Team proactively solves problems and inspects/adapts regularly",
+      "The Scrum Master updates the Sprint Backlog"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master should shield the team from all feedback. (Q272)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Which coaching stance is best for helping a team explore new ways of working? (Q273)",
+    "answers": [
+      "Directing and telling",
+      "Asking powerful open-ended questions",
+      "Assigning fixed roles",
+      "Following the organizational chart"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "How does the Scrum Master help develop leadership within the team? (Q274)",
+    "answers": [
+      "By assigning a team lead",
+      "By coaching members to step up, take ownership and collaborate",
+      "By appointing a developer as manager",
+      "By removing responsibility from the team"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master’s influence can extend beyond the Scrum Team. (Q275)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What makes a Scrum Master a great facilitator during a Sprint Retrospective? (Q276)",
+    "answers": [
+      "They give a presentation",
+      "They ask thought-provoking questions and encourage psychological safety",
+      "They resolve all problems personally",
+      "They analyze the velocity chart"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "How does the Scrum Master help develop a learning culture? (Q277)",
+    "answers": [
+      "By focusing on deliverables only",
+      "By organizing mandatory training",
+      "By encouraging experimentation, reflection and knowledge sharing",
+      "By avoiding team failure"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: In some situations, the best help the Scrum Master can offer is not giving an answer. (Q278)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is an indicator that the team relies too heavily on the Scrum Master? (Q279)",
+    "answers": [
+      "Team conducts their own ceremonies",
+      "Team resolves conflicts without external help",
+      "Scrum Master facilitates every decision and problem-solving activity",
+      "Team handles impediments internally"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "How can a Scrum Master help build trust within the team? (Q280)",
+    "answers": [
+      "By focusing on velocity targets",
+      "By fostering open, respectful and consistent communication",
+      "By minimizing team feedback",
+      "By limiting interaction between members"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What does it mean for a Scrum Master to be a 'servant leader'? (Q281)",
+    "answers": [
+      "They prioritize their own authority",
+      "They serve the team by enabling growth, ownership, and success",
+      "They manage deadlines and performance",
+      "They dictate all ceremonies"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: A team that never fails is a sign of a healthy Scrum implementation. (Q282)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is a valuable technique a Scrum Master can use to help a stuck team? (Q283)",
+    "answers": [
+      "Take over the problem and solve it",
+      "Introduce a retrospective or coaching conversation",
+      "Replace team members",
+      "Skip the Sprint Review"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What should the Scrum Master do if a team member dominates discussions? (Q284)",
+    "answers": [
+      "Ignore it",
+      "Facilitate equal participation using coaching and facilitation skills",
+      "Remove the person from the team",
+      "Let the Product Owner decide"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Teaching and coaching are both part of the Scrum Master role. (Q285)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which behavior reflects a mature self-managing team? (Q286)",
+    "answers": [
+      "Waiting for the Scrum Master to assign work",
+      "Solving conflicts internally and making joint decisions",
+      "Avoiding discussions to prevent conflict",
+      "Following instructions without questioning"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "How can a Scrum Master help an organization adopt agility beyond the Scrum Team? (Q287)",
+    "answers": [
+      "Enforce Scrum on all departments",
+      "Coach leaders and promote values of transparency, inspection, and adaptation",
+      "Limit interactions with non-Scrum areas",
+      "Only focus on the team"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master must always be the one leading Scrum events. (Q288)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is an indicator that the team is improving its Scrum maturity? (Q289)",
+    "answers": [
+      "They request fewer retrospectives",
+      "They meet all deadlines",
+      "They regularly inspect, adapt, and raise their own impediments",
+      "They no longer use Scrum artifacts"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "How does a Scrum Master support psychological safety in a team? (Q290)",
+    "answers": [
+      "By avoiding uncomfortable topics",
+      "By encouraging silence during disagreements",
+      "By modeling vulnerability, empathy and respect",
+      "By taking over discussions"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the main outcome of a Scrum Master coaching the team on ownership? (Q291)",
+    "answers": [
+      "The team waits for guidance",
+      "The team sets goals and takes responsibility for results",
+      "The Scrum Master approves all backlog changes",
+      "Only senior members participate in planning"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master should act as a role model of Scrum values. (Q292)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "How can a Scrum Master enable innovation within the team? (Q293)",
+    "answers": [
+      "Schedule fewer meetings",
+      "Encourage experimentation and provide a safe environment for failure",
+      "Ask stakeholders to review code",
+      "Reduce time for retrospectives"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What does it mean for a Scrum Master to be a systems thinker? (Q294)",
+    "answers": [
+      "They focus only on individual performance",
+      "They address symptoms, not causes",
+      "They consider how structures, processes, and behaviors interact",
+      "They avoid organizational issues"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master’s responsibility ends at the team boundary. (Q295)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Which skill is most helpful for a Scrum Master acting as a coach? (Q296)",
+    "answers": [
+      "Ability to write code",
+      "Ability to ask open-ended questions that promote reflection",
+      "Enforcing meeting attendance",
+      "Calculating velocity manually"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is one way the Scrum Master improves team dynamics? (Q297)",
+    "answers": [
+      "By managing individual goals",
+      "By fostering respect, openness, and honest communication",
+      "By reviewing salary levels",
+      "By scheduling fewer reviews"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Empowered teams are more likely to be creative and engaged. (Q298)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What mindset should a Scrum Master adopt when working with resistant stakeholders? (Q299)",
+    "answers": [
+      "Compliance enforcer",
+      "Blame minimizer",
+      "Curious coach and empathetic educator",
+      "Process auditor"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "How does the Scrum Master help increase long-term agility in the organization? (Q300)",
+    "answers": [
+      "By rotating teams constantly",
+      "By optimizing short-term output",
+      "By helping build a culture of learning, transparency, and adaptation",
+      "By implementing more tools"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the primary purpose of the Sprint Review? (Q301)",
+    "answers": [
+      "To approve work done by Developers",
+      "To assign tasks for the next Sprint",
+      "To inspect the Increment and adapt the Product Backlog",
+      "To evaluate individual performance"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master ensures the Product Backlog is ordered correctly. (Q302)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What makes the Increment a key artifact in Scrum? (Q303)",
+    "answers": [
+      "It contains all planned work, completed or not",
+      "It provides a usable and potentially shippable outcome",
+      "It includes developer feedback only",
+      "It is updated during the retrospective"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What behavior best reflects the Scrum value of 'Respect'? (Q304)",
+    "answers": [
+      "Challenging every opinion publicly",
+      "Allowing only seniors to speak",
+      "Valuing contributions from all team members equally",
+      "Delegating all technical decisions to external experts"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Daily Scrum is primarily for reporting to the Scrum Master. (Q305)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Which activity demonstrates the Scrum Master’s role as a change agent? (Q306)",
+    "answers": [
+      "Enforcing status updates",
+      "Helping the organization adopt Scrum values and empirical thinking",
+      "Approving team vacation calendars",
+      "Avoiding conversations about organizational dysfunction"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who is responsible for maximizing product value? (Q307)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Definition of Done should be shared and understood by the entire Scrum Team. (Q308)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What happens if the team cannot complete all Sprint Backlog items? (Q309)",
+    "answers": [
+      "The Scrum Master extends the Sprint",
+      "They move them to the next Sprint automatically",
+      "They review the reasons during the Sprint Review and update the Product Backlog",
+      "The work is discarded"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Which responsibility does NOT belong to the Scrum Master? (Q310)",
+    "answers": [
+      "Coaching the organization in Scrum adoption",
+      "Facilitating Scrum events when needed",
+      "Creating the Product Backlog",
+      "Removing impediments for the team"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master helps ensure the Scrum Team adheres to Scrum theory and practice. (Q311)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What describes the Sprint Backlog? (Q312)",
+    "answers": [
+      "A list of features to release",
+      "A to-do list for the Product Owner",
+      "A plan by and for the Developers about how to meet the Sprint Goal",
+      "A list of impediments"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "How does the Scrum Master support the Product Owner? (Q313)",
+    "answers": [
+      "By managing the Product Backlog",
+      "By writing user stories",
+      "By helping stakeholders understand empirical product planning",
+      "By assigning tasks"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Team owns the Definition of Done. (Q314)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which of the following is a responsibility of the Developers? (Q315)",
+    "answers": [
+      "Ordering the Product Backlog",
+      "Defining the business strategy",
+      "Delivering a Done Increment each Sprint",
+      "Managing stakeholder relationships"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Which Scrum event provides a structured opportunity to inspect and adapt the product? (Q316)",
+    "answers": [
+      "Sprint Planning",
+      "Sprint Review",
+      "Daily Scrum",
+      "Sprint Retrospective"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is the role of the Scrum Master during the Daily Scrum? (Q317)",
+    "answers": [
+      "To observe or facilitate only if needed, not to lead it",
+      "To assign tasks and track time",
+      "To check progress toward milestones",
+      "To update the Sprint Goal"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "True or False: Only the Product Owner can cancel a Sprint. (Q318)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the Product Goal? (Q319)",
+    "answers": [
+      "The objective for the next release",
+      "The objective for the product that guides the Scrum Team's work",
+      "The business case of the project",
+      "The Product Owner's personal goal"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is the best way to increase transparency in Scrum? (Q320)",
+    "answers": [
+      "Hide unfinished work",
+      "Use burn-up charts only",
+      "Have clear definitions of artifacts and frequent inspection",
+      "Report weekly to external managers"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the key output of Sprint Planning? (Q321)",
+    "answers": [
+      "A finalized Product Backlog",
+      "An approved release plan",
+      "A Sprint Goal and a plan for delivering a usable Increment",
+      "An estimation report"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Developers decide how many Product Backlog items to take into a Sprint. (Q322)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "How can a Scrum Master ensure a valuable Sprint Retrospective? (Q323)",
+    "answers": [
+      "By focusing only on what went wrong",
+      "By inviting stakeholders",
+      "By encouraging psychological safety and collaborative improvement",
+      "By limiting feedback to the Scrum Master"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who owns the Sprint Goal? (Q324)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Scrum Team",
+      "Developers"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What does it mean if the Increment is not 'Done'? (Q325)",
+    "answers": [
+      "It can still be released",
+      "It is not usable and should not be shown at the Sprint Review",
+      "It should be counted as velocity",
+      "It becomes the Sprint Goal"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: A Scrum Team can refine the Product Backlog at any time. (Q326)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "How does the Scrum Master influence the organization? (Q327)",
+    "answers": [
+      "By enforcing budget control",
+      "By auditing all teams",
+      "By leading change, coaching and removing barriers to agility",
+      "By creating performance reviews"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is required for an Increment to be considered usable? (Q328)",
+    "answers": [
+      "Stakeholder approval",
+      "Complete documentation",
+      "Meeting the Definition of Done",
+      "Passing all unit tests"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who ensures the Product Backlog is visible and transparent? (Q329)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Team Lead"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Sprint Retrospective is only about fixing what went wrong. (Q330)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the Scrum Master’s role during Product Backlog refinement? (Q331)",
+    "answers": [
+      "Writing detailed requirements",
+      "Approving technical solutions",
+      "Facilitating collaboration and helping the team understand Scrum",
+      "Controlling prioritization"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master facilitates Scrum events upon request or as needed. (Q332)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What best describes the Sprint Goal? (Q333)",
+    "answers": [
+      "A list of tasks to complete",
+      "A high-level objective the team aims to accomplish in the Sprint",
+      "The sum of backlog items chosen",
+      "A technical milestone"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "How can the Scrum Master help Developers improve estimation? (Q334)",
+    "answers": [
+      "By assigning story points",
+      "By using burndown charts only",
+      "By coaching them on empirical planning and historical data",
+      "By setting time limits"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Scrum encourages fixed roles and rigid job titles. (Q335)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the most important aspect of the Definition of Done? (Q336)",
+    "answers": [
+      "It tracks team velocity",
+      "It aligns expectations about quality and completeness",
+      "It defines sprint length",
+      "It specifies task durations"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who benefits from the transparency of the Scrum artifacts? (Q337)",
+    "answers": [
+      "Only Scrum Master",
+      "Stakeholders and Scrum Team",
+      "Managers only",
+      "QA team"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Team should discuss what went well during the Sprint Retrospective. (Q338)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What outcome should the Sprint Retrospective produce? (Q339)",
+    "answers": [
+      "A complete project plan",
+      "An updated budget",
+      "A plan for improvements in the next Sprint",
+      "A product roadmap"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Which Scrum value encourages team members to speak up and share ideas? (Q340)",
+    "answers": [
+      "Focus",
+      "Courage",
+      "Commitment",
+      "Planning"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is a key responsibility of the Scrum Master during organizational change? (Q341)",
+    "answers": [
+      "Designing release plans",
+      "Controlling team structure",
+      "Coaching people and supporting the adoption of Scrum values",
+      "Approving technical specifications"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Product Owner must participate in the Sprint Retrospective. (Q342)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What should the Scrum Team do if an external stakeholder assigns work directly to a Developer? (Q343)",
+    "answers": [
+      "Accept and deliver it silently",
+      "Ask the Scrum Master to handle it",
+      "Redirect the request through the Product Owner",
+      "Change the Sprint Goal"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for creating high-quality Increments in Scrum? (Q344)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Developers",
+      "Team Lead"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Developers can invite anyone to the Sprint Planning to provide technical advice. (Q345)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What happens during the Sprint Retrospective? (Q346)",
+    "answers": [
+      "Backlog items are prioritized",
+      "Velocity is finalized",
+      "The team inspects how the last Sprint went and identifies improvements",
+      "Stakeholders approve the Increment"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Which of the following is an outcome of coaching by a Scrum Master? (Q347)",
+    "answers": [
+      "Increased dependence on the Scrum Master",
+      "More meetings",
+      "Improved team accountability and continuous learning",
+      "Lower velocity"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Sprint Goal must remain fixed during the Sprint. (Q348)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is expected of the Developers during the Daily Scrum? (Q349)",
+    "answers": [
+      "Report to the Product Owner",
+      "Reprioritize the Product Backlog",
+      "Inspect progress toward the Sprint Goal and adapt the plan",
+      "Deliver the Increment"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the main benefit of having clear Scrum values in a team? (Q350)",
+    "answers": [
+      "More documentation",
+      "Faster delivery",
+      "Stronger collaboration, transparency, and trust",
+      "Higher cost savings"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the main purpose of the Definition of Done? (Q351)",
+    "answers": [
+      "To list tasks to be completed",
+      "To track individual performance",
+      "To create a shared understanding of what 'done' means",
+      "To define the Product Goal"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master should remove all conflict within the team. (Q352)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Which action shows that the Scrum Master is acting as a coach? (Q353)",
+    "answers": [
+      "Solving all problems directly",
+      "Assigning work to Developers",
+      "Helping the team reflect and discover their own solutions",
+      "Updating the Sprint Backlog daily"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who decides what Product Backlog items are selected during Sprint Planning? (Q354)",
+    "answers": [
+      "Product Owner proposes, and Developers select collaboratively",
+      "Scrum Master assigns them",
+      "Stakeholders choose",
+      "Managers approve"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "True or False: The Scrum Master manages the team’s performance goals. (Q355)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What does the Product Backlog reflect? (Q356)",
+    "answers": [
+      "All tasks already completed",
+      "All ideas that could improve the product",
+      "The Product Owner’s goals only",
+      "Sprint metrics"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "How does Scrum promote accountability? (Q357)",
+    "answers": [
+      "By assigning work to individuals",
+      "By distributing ownership among defined roles",
+      "By allowing command-and-control leadership",
+      "By avoiding responsibility sharing"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: A Sprint Review is a demo for stakeholders to approve or reject the Sprint outcome. (Q358)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the Scrum Master’s stance toward conflict in a healthy team? (Q359)",
+    "answers": [
+      "Suppress it to avoid discomfort",
+      "Mediate every conflict directly",
+      "Facilitate safe, open dialogue to resolve it constructively",
+      "Assign blame fairly"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What happens if the Definition of Done becomes stricter? (Q360)",
+    "answers": [
+      "Velocity automatically increases",
+      "Future Increments must meet the new criteria",
+      "The current Sprint is canceled",
+      "Previous Increments must be reworked"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who is accountable for communicating the Product Goal? (Q361)",
+    "answers": [
+      "Scrum Master",
+      "Stakeholders",
+      "Product Owner",
+      "Developers"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Sprint Retrospective should include action items for improvement. (Q362)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the Scrum Master’s responsibility in the Daily Scrum? (Q363)",
+    "answers": [
+      "Lead and record the meeting",
+      "Observe or facilitate only if needed",
+      "Assign work for the day",
+      "Report progress to stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Which of the following is a trait of a high-performing Scrum Team? (Q364)",
+    "answers": [
+      "Low interaction",
+      "Frequent escalation",
+      "Psychological safety and shared ownership",
+      "Strict management approval"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Product Owner defines how the work will be done. (Q365)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "How can the Scrum Master foster team learning? (Q366)",
+    "answers": [
+      "By enforcing strict processes",
+      "By preventing experimentation",
+      "By encouraging reflection, experimentation, and continuous feedback",
+      "By limiting retrospectives"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should a Scrum Master do when the team avoids conflict? (Q367)",
+    "answers": [
+      "Leave it alone",
+      "Suppress emotional topics",
+      "Facilitate discussion in a safe space",
+      "Escalate to upper management immediately"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Sprint Goal can be adjusted during the Sprint. (Q368)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What helps increase transparency in Scrum? (Q369)",
+    "answers": [
+      "Private backlogs",
+      "Multiple definitions of done",
+      "Clear, shared artifacts and regular inspection",
+      "Avoiding stakeholder involvement"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who facilitates collaboration with stakeholders during the Sprint Review? (Q370)",
+    "answers": [
+      "Scrum Master",
+      "Developers",
+      "Product Owner",
+      "Scrum Team"
+    ],
+    "correct": [3]
+  },
+  {
+    "question": "True or False: The Developers are allowed to modify the Sprint Backlog during the Sprint. (Q371)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the primary focus of the Daily Scrum? (Q372)",
+    "answers": [
+      "To assign new work",
+      "To inspect progress and adapt the plan toward the Sprint Goal",
+      "To report to the Scrum Master",
+      "To review backlog prioritization"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What does the Scrum value of 'Openness' encourage? (Q373)",
+    "answers": [
+      "Sharing unfinished work openly with the public",
+      "Being transparent about challenges, ideas, and progress within the team",
+      "Allowing anyone to modify artifacts",
+      "Opening meetings to all company staff"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Product Owner may delegate work selection during Sprint Planning to the Scrum Master. (Q374)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Which activity best reflects the Scrum Master acting as a mentor? (Q375)",
+    "answers": [
+      "Giving orders to Developers",
+      "Helping team members grow their agile mindset through experience sharing",
+      "Measuring individual performance",
+      "Reporting directly to senior leadership"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is the time-box for the Sprint Planning in a 2-week Sprint? (Q376)",
+    "answers": [
+      "2 hours",
+      "4 hours",
+      "8 hours",
+      "6 hours"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: An Increment can include multiple Product Backlog Items. (Q377)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What role does the Scrum Master play in helping the Product Owner? (Q378)",
+    "answers": [
+      "Ordering the Product Backlog",
+      "Writing code",
+      "Facilitating stakeholder collaboration and agile product planning",
+      "Approving deliverables"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should the Scrum Master do when team members frequently interrupt each other? (Q379)",
+    "answers": [
+      "Take over conversations",
+      "Encourage a team norm around respectful communication and facilitate dialogue",
+      "Ignore it",
+      "Assign a speaking order"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What happens when a team shares a strong Definition of Done? (Q380)",
+    "answers": [
+      "Increments are consistently usable and transparent",
+      "Velocity decreases",
+      "Tasks are longer",
+      "Retrospectives are skipped"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "What is a primary responsibility of the Scrum Master related to team effectiveness? (Q381)",
+    "answers": [
+      "Monitoring hours worked",
+      "Helping the team improve through coaching, facilitation, and removal of impediments",
+      "Writing user stories",
+      "Assigning work"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master is part of the Scrum Team. (Q382)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which of the following does NOT happen during the Sprint Review? (Q383)",
+    "answers": [
+      "Inspecting what was accomplished in the Sprint",
+      "Adjusting the Product Backlog based on feedback",
+      "Creating the Sprint Goal",
+      "Discussing progress toward the Product Goal"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "How can the Scrum Master best promote cross-functionality in the team? (Q384)",
+    "answers": [
+      "By assigning each person a narrow role",
+      "By shielding Developers from each other’s work",
+      "By encouraging knowledge sharing and collaboration",
+      "By enforcing strict separation of duties"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Stakeholders can attend the Sprint Review. (Q385)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What should happen if a Scrum Team realizes their Definition of Done is too weak? (Q386)",
+    "answers": [
+      "Stick to it until the product is released",
+      "Change it in the next project",
+      "Collaboratively strengthen it and apply it to future Increments",
+      "Ignore it during Sprints"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What mindset shift does Scrum promote within organizations? (Q387)",
+    "answers": [
+      "From command-and-control to collaboration and self-management",
+      "From user stories to Gantt charts",
+      "From cross-functional to siloed teams",
+      "From team focus to individual performance"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "True or False: One function of the Scrum Master is to foster a culture of experimentation. (Q388)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the best indicator that a Scrum Team is improving over time? (Q389)",
+    "answers": [
+      "Their velocity always increases",
+      "They no longer hold retrospectives",
+      "They are more self-managing and proactive in solving problems",
+      "They avoid change"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is an effective facilitation technique during a Sprint Retrospective? (Q390)",
+    "answers": [
+      "Assigning action items without discussion",
+      "Reviewing a velocity chart only",
+      "Using open questions to guide reflection and uncover improvement areas",
+      "Skipping discussion if no one speaks"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is the purpose of the Product Goal in Scrum? (Q391)",
+    "answers": [
+      "To define Sprint velocity",
+      "To guide the Scrum Team toward a long-term objective",
+      "To establish individual performance goals",
+      "To document user feedback"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: Every Scrum artifact has an associated commitment. (Q392)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What does the Sprint Goal help the team do? (Q393)",
+    "answers": [
+      "Stay focused and collaborate toward a common objective",
+      "Avoid work not assigned by management",
+      "Eliminate team discussions",
+      "Ignore incomplete work"
+    ],
+    "correct": [0]
+  },
+  {
+    "question": "Who is accountable for adapting the Sprint Backlog as the Sprint progresses? (Q394)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master defines the Product Goal. (Q395)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Which Scrum value supports facing difficult challenges and speaking up? (Q396)",
+    "answers": [
+      "Focus",
+      "Commitment",
+      "Courage",
+      "Respect"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "How does a Scrum Master serve the Developers? (Q397)",
+    "answers": [
+      "By assigning work daily",
+      "By removing impediments and supporting self-management",
+      "By tracking performance KPIs",
+      "By creating the Sprint Backlog"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What can happen when a team doesn't have a shared Definition of Done? (Q398)",
+    "answers": [
+      "Nothing changes",
+      "Increments are inconsistent and lack transparency",
+      "The team skips the Daily Scrum",
+      "Velocity increases"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Product Owner must attend the Sprint Review. (Q399)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What best describes Scrum’s approach to planning? (Q400)",
+    "answers": [
+      "Predictive, detailed upfront planning",
+      "Minimal planning with no structure",
+      "Empirical planning with regular inspection and adaptation",
+      "Daily command-based planning"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: A Scrum Master can be a full-time Developer on the same team. (Q401)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What should happen when a Scrum Team discovers recurring impediments? (Q402)",
+    "answers": [
+      "Escalate immediately to upper management",
+      "Ignore and focus on delivery",
+      "Inspect them in the Sprint Retrospective and create improvement actions",
+      "Let the Scrum Master solve them alone"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is expected of a Scrum Master when external pressure threatens the Sprint Goal? (Q403)",
+    "answers": [
+      "Allow external interference for flexibility",
+      "Defend the team’s focus and facilitate conversation through the Product Owner",
+      "Cancel the Sprint",
+      "Assign new tasks personally"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Product Owner is the sole person responsible for Product Backlog transparency. (Q404)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which situation demonstrates team self-management? (Q405)",
+    "answers": [
+      "Team waits for Scrum Master approval before starting",
+      "Team handles task selection, collaboration, and adaptation during the Sprint",
+      "Team delegates planning to the Product Owner",
+      "Scrum Master assigns daily work"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What can the Scrum Master do when the Product Owner is unclear about prioritization? (Q406)",
+    "answers": [
+      "Reorder the backlog",
+      "Coach the Product Owner on backlog management and stakeholder collaboration",
+      "Ignore the issue",
+      "Assign the task to Developers"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Definition of Done may evolve as the Scrum Team matures. (Q407)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is the Product Backlog refinement activity used for? (Q408)",
+    "answers": [
+      "To approve tasks",
+      "To estimate velocity",
+      "To clarify, split, and prioritize Product Backlog items collaboratively",
+      "To define Sprint Goals"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for deciding when work is ready to be selected for a Sprint? (Q409)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Scrum Team",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Product Owner must define all acceptance criteria before refinement. (Q410)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What should the Scrum Team do when an improvement action was identified in the last Retrospective? (Q411)",
+    "answers": [
+      "Wait for the Scrum Master to assign it",
+      "Add it to the Product Backlog",
+      "Include it in the Sprint Backlog and work on it during the next Sprint",
+      "Review it at the next review meeting"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Only the Product Owner can update the Product Backlog. (Q412)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "How should the Scrum Master handle low participation in Sprint Retrospectives? (Q413)",
+    "answers": [
+      "Shorten the event",
+      "Cancel the retrospective",
+      "Coach the team and create a psychologically safe space to encourage engagement",
+      "Replace it with a survey"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should a Scrum Master do if the organization resists adopting Scrum values? (Q414)",
+    "answers": [
+      "Enforce compliance immediately",
+      "Ignore it and focus only on the team",
+      "Act as a coach and change agent to support cultural transformation",
+      "Request a different framework"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Developers must participate in Product Backlog refinement. (Q415)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Which behavior aligns with the Scrum value of 'Commitment'? (Q416)",
+    "answers": [
+      "Overcommitting to please stakeholders",
+      "Focusing as a team on meeting the Sprint Goal",
+      "Committing to daily overtime",
+      "Letting the Scrum Master plan everything"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What outcome is expected from Sprint Planning? (Q417)",
+    "answers": [
+      "A release schedule",
+      "A full task breakdown",
+      "A Sprint Goal, selected Product Backlog items, and a delivery plan",
+      "A QA report"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master is responsible for maximizing team velocity. (Q418)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "Who can change the order of items in the Product Backlog? (Q419)",
+    "answers": [
+      "Scrum Master",
+      "Developers",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is one way the Scrum Master fosters transparency? (Q420)",
+    "answers": [
+      "By attending all meetings",
+      "By facilitating shared understanding of artifacts and goals",
+      "By creating reports for management",
+      "By assigning work clearly"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is the maximum time-box for a Sprint Review for a one-month Sprint? (Q421)",
+    "answers": [
+      "2 hours",
+      "4 hours",
+      "6 hours",
+      "8 hours"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master ensures the team delivers the exact number of items selected in Sprint Planning. (Q422)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What should the Scrum Team do if they realize they can't achieve the Sprint Goal? (Q423)",
+    "answers": [
+      "Cancel the Sprint",
+      "Work overtime",
+      "Adapt the plan while staying focused on the Sprint Goal",
+      "Ask the Product Owner to rewrite the goal"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is responsible for ensuring that the team follows Scrum rules? (Q424)",
+    "answers": [
+      "Project Manager",
+      "Scrum Master",
+      "Product Owner",
+      "Stakeholders"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Increment must be released at the end of every Sprint. (Q425)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is one way the Scrum Master helps the team embrace agility? (Q426)",
+    "answers": [
+      "By managing all meetings",
+      "By coaching on empirical process and promoting continuous improvement",
+      "By measuring individual output",
+      "By writing technical documentation"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is the purpose of the Sprint Retrospective? (Q427)",
+    "answers": [
+      "To analyze stakeholder needs",
+      "To plan the next Sprint",
+      "To inspect how the last Sprint went and improve",
+      "To review the backlog"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: Stakeholders can attend the Sprint Planning. (Q428)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is a benefit of cross-functional teams in Scrum? (Q429)",
+    "answers": [
+      "Easier budget approval",
+      "No need for stakeholders",
+      "Team can deliver usable Increments without external dependencies",
+      "More control for the Scrum Master"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What should the team do if there is no clear Definition of Done? (Q430)",
+    "answers": [
+      "Delay work until one is provided",
+      "Create one collaboratively as soon as possible",
+      "Use only user stories",
+      "Let the Scrum Master define it alone"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Who creates the Definition of Done? (Q431)",
+    "answers": [
+      "The Product Owner",
+      "The Scrum Master",
+      "The Scrum Team collaboratively",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: In Scrum, the Product Owner is allowed to change the Sprint Goal after the Sprint starts. (Q432)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the main purpose of the Sprint? (Q433)",
+    "answers": [
+      "To develop features according to a release plan",
+      "To deliver a potentially usable Increment of product",
+      "To test only the UI",
+      "To collect user feedback"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What action best represents the Scrum value of 'Focus'? (Q434)",
+    "answers": [
+      "Working on multiple side projects",
+      "Delaying the Sprint Planning",
+      "Concentrating on the Sprint Goal and current Sprint Backlog",
+      "Avoiding stakeholder input"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Master must attend the Daily Scrum every day. (Q435)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the benefit of having a consistent time-box for all Scrum events? (Q436)",
+    "answers": [
+      "To simplify documentation",
+      "To avoid discussion",
+      "To increase predictability and enable focus",
+      "To reduce team velocity"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "How should the Scrum Master support transparency across teams in a scaled Scrum environment? (Q437)",
+    "answers": [
+      "By creating one central backlog",
+      "By facilitating shared understanding of progress and impediments",
+      "By leading all planning sessions",
+      "By preventing other teams from interacting"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "True or False: The Scrum Master is a manager of the Scrum Team. (Q438)",
+    "answers": ["True", "False"],
+    "correct": [1]
+  },
+  {
+    "question": "What is the best indicator that a team is benefiting from retrospectives? (Q439)",
+    "answers": [
+      "They skip meetings",
+      "They raise fewer issues",
+      "They regularly implement improvements and reflect on outcomes",
+      "They review velocity charts only"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "Who is allowed to cancel a Sprint? (Q440)",
+    "answers": [
+      "Scrum Master",
+      "Product Owner",
+      "Project Manager",
+      "Developers"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "What is the main responsibility of the Product Owner during Sprint Planning? (Q441)",
+    "answers": [
+      "Assigning work to Developers",
+      "Controlling the Sprint Goal",
+      "Clarifying and prioritizing Product Backlog items",
+      "Creating the task board"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: A Sprint can be canceled if the Sprint Goal becomes obsolete. (Q442)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "Who is responsible for managing the Sprint Backlog? (Q443)",
+    "answers": [
+      "Product Owner",
+      "Scrum Master",
+      "Developers",
+      "Stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What is an example of the Scrum Master fostering empiricism? (Q444)",
+    "answers": [
+      "Tracking hours worked per Developer",
+      "Telling the team what to do",
+      "Encouraging frequent inspection and adaptation based on transparency",
+      "Measuring output against planned velocity"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Scrum Team may change the Sprint Backlog as new work is discovered. (Q445)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What is expected from Developers by the end of each Sprint? (Q446)",
+    "answers": [
+      "A complete requirements document",
+      "A potentially usable Increment that meets the Definition of Done",
+      "A report for upper management",
+      "A signed-off release plan"
+    ],
+    "correct": [1]
+  },
+  {
+    "question": "Which of the following is NOT a purpose of the Sprint Review? (Q447)",
+    "answers": [
+      "Inspect the Increment",
+      "Adapt the Product Backlog",
+      "Review project budget",
+      "Collaborate with stakeholders"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "True or False: The Product Owner is part of the Scrum Team. (Q448)",
+    "answers": ["True", "False"],
+    "correct": [0]
+  },
+  {
+    "question": "What makes a team cross-functional in Scrum? (Q449)",
+    "answers": [
+      "They have at least one tester",
+      "They rely on external approvals",
+      "They have all skills needed to deliver a usable Increment",
+      "They are all full-time employees"
+    ],
+    "correct": [2]
+  },
+  {
+    "question": "What happens if an Increment is not releasable? (Q450)",
+    "answers": [
+      "It is accepted anyway",
+      "It is reviewed but not shipped until Done",
+      "It is discarded",
+      "The Sprint is extended"
+    ],
+    "correct": [1]
+  }
+]
+

@@ -1,0 +1,151 @@
+@page "/about"
+@using Microsoft.Extensions.Options
+
+@inject IOptions<ScrumTrainerConfiguration> config
+
+<PageTitle>About</PageTitle>
+
+<section id="about">
+    <h2>About Scrum Trainer</h2>
+
+    <p>
+        <strong>Scrum Trainer</strong> was created with two goals in mind. The first one is to provide an effective way 
+        to prepare for the <strong>Professional Scrum Master (PSM I)</strong> certification through exam-style practice, 
+        real-time pressure, scoring evaluation and question review. By simulating the exam experience, 
+        learners can strengthen their understanding of Scrum roles, events, artifacts and values.
+    </p>
+
+    <p>
+        The second purpose is to present this application as part of my professional portfolio — a demonstration 
+        of my technical abilities, architecture thinking and commitment to code quality. The system is built 
+        following principles such as <strong>Clean Code</strong>, use of <strong>unit testing</strong>, 
+        and design patterns like <strong>Dependency Inversion</strong> to promote testability, maintainability and scalability.
+    </p>
+
+    <p>
+        This project reflects not only what I know about Scrum, but also how I build software: readable, structured, 
+        tested and growth-oriented. You are invited to explore it, learn from it, and even contribute. 
+    </p>
+
+    <p style="text-align:center; margin-top:35px;">
+        👉 You can view the full project repository here:  
+        <br>
+        <a href="@config.Value.GithubLink" target="_blank" class="github-link">
+            GitHub Portfolio &ndash; Scrum Trainer
+        </a>
+    </p>
+</section>
+
+<section id="features">
+    <h2>Features</h2>
+    <div class="features-grid">
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <!-- Quiz icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M5 3h14a2 2 0 0 1 2 2v14l-4-3-4 3-4-3-4 3V5a2 2 0 0 1 2-2z"/>
+                </svg>
+            </div>
+            <h3>Exam-like Quiz</h3>
+            <p>Timed simulations with single/multiple choice questions similar to the PSM I exam format.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <!-- Results icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 3v18h18V3H3zm8 14H7v-2h4v2zm6-4H7v-2h10v2zm0-4H7V7h10v2z"/>
+                </svg>
+            </div>
+            <h3>Immediate Results</h3>
+            <p>Review correct and incorrect answers to reinforce learning through feedback.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <!-- Clean code icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M4 4h16v2H4zm0 4h10v2H4zm0 4h8v2H4zm0 4h6v2H4zM15 8l5 4-5 4V8z"/>
+                </svg>
+            </div>
+            <h3>Clean Code & Testing</h3>
+            <p>Developed using Clean Code principles, automated unit tests, and scalable architecture.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <!-- Dependency inversion icon -->
+                <svg viewBox="0 0 24 24">
+                    <circle cx="12" cy="12" r="3"/>
+                    <path d="M19 12h3M2 12h3M12 19v3M12 2v3"/>
+                </svg>
+            </div>
+            <h3>Dependency Inversion Design</h3>
+            <p>Flexible composition and testability through IoC and layered architecture.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <!-- Modular scalable icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M3 3h7v7H3zm11 0h7v7h-7zm-11 11h7v7H3zm11 0h7v7h-7z"/>
+                </svg>
+            </div>
+            <h3>Modular & Scalable</h3>
+            <p>Built to grow — new capabilities can be added without refactoring core structures.</p>
+        </div>
+
+        <div class="feature-card">
+            <div class="feature-icon">
+                <!-- Authentication icon -->
+                <svg viewBox="0 0 24 24">
+                    <path d="M12 1a5 5 0 0 1 5 5v3H7V6a5 5 0 0 1 5-5z"/>
+                    <rect x="6" y="10" width="12" height="12" rx="2"/>
+                </svg>
+            </div>
+            <h3>Authentication-ready Architecture</h3>
+            <p>Prepared for secure login, identity management and OAuth2 integration for future user persistence.</p>
+        </div>
+
+    </div>
+</section>
+
+<section id="roadmap">
+    <h2>Roadmap</h2>
+
+    <ul class="roadmap-list">
+
+        <li><strong>User accounts & Authentication</strong>  
+            — Login + secure identity management (OAuth 2 planned).</li>
+
+        <li><strong>Historical Result Tracking</strong>  
+            — Save quiz results and analyze long-term performance.</li>
+
+        <li><strong>Personal Progress Dashboard</strong>  
+            — Charts and insights powered by stored exam data.</li>
+
+        <li><strong>Database Persistence</strong>  
+            — Entity Framework integration for scalable data storage.</li>
+
+        <li><strong>Mobile Experience Enhancements</strong>  
+            — Focus on responsiveness and fast interaction.</li>
+
+    </ul>
+</section>
+
+
+<section id="contact">
+    <h2>Contact</h2>
+    <p>If you are interested in my work or would like to collaborate, feel free to reach out:</p>
+
+    <div class="contact-box">
+        📧 <a href="mailto:@config.Value.ContactEmail">@config.Value.ContactEmail</a><br>
+        🔗 <a href="@config.Value.GithubLink" target="_blank">GitHub Profile</a><br>
+        💼 <a href="@config.Value.LinkedInLink" target="_blank">LinkedIn</a>
+    </div>
+
+    <p style="margin-top:18px; font-style:italic;">
+        I'm open to conversation, ideas, feedback — and new opportunities.
+    </p>
+</section>

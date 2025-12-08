@@ -1,0 +1,90 @@
+@rendermode InteractiveServer
+
+@using ScrumTrainer.BusinessLogic
+
+@namespace ScrumTrainer.Components
+
+<div class="quiz-container">
+
+    <h3>Quiz</h3>
+
+    @if(!Quiz.IsStarted && !Quiz.IsCompleted)
+    {
+        <div>Press "start"!</div>
+    }
+
+    @if (Quiz.IsStarted)
+    {
+        <div class="quiz-info quiz-progress">
+            <div><strong>Limit time:</strong> @Quiz.TimeLimitInSeconds s</div>
+            <div><strong>Elapsed time:</strong> @Quiz.TimeTakenInSeconds s</div>
+            <div><strong>Question:</strong> @(Quiz.CurrentQuestionIndex + 1) / @Quiz.QuestionsCount</div>
+        </div>
+    }
+
+    @if (Quiz.IsCompleted)
+    {
+        <div class="quiz-info quiz-completed">
+            <h4>Quiz completed!</h4>
+            <p class="quiz-results"><strong>Right Answers:</strong> @Quiz.QuestionsRightCount / @Quiz.QuestionsCount</p>
+            <div><strong>Question:</strong> @(Quiz.CurrentQuestionIndex + 1) / @Quiz.QuestionsCount</div>
+        </div>
+    }
+
+    @if (Quiz.CurrentQuestion != null)
+    {
+        <div class="question-block" @key="Quiz.CurrentQuestionIndex">
+            <h4>Question:</h4>
+            @if (Quiz.IsCompleted)
+            {
+                if (Quiz.CurrentQuestion.IsRight)
+                {
+                    <p class="question-ok">OK</p>
+                }
+                else
+                {
+                    <p class="question-failed">FAILED</p>
+                }
+            }
+            <p>@Quiz.CurrentQuestion.Text</p>
+
+            <h5>Options:</h5>
+            <ul>
+                @foreach (var answer in Quiz.CurrentQuestion.Answers)
+                {
+                    <li @key="(Quiz.CurrentQuestionIndex, answer.Index)" 
+                        class="answer @GetCssClassFromAnswerStatus(answer.AnswerStatus) @GetAnswerEnabledCssClass()">
+                        
+                            @if (Quiz.CurrentQuestion.IsMultiple)
+                            {
+                                <input
+                                    id="@($"{Quiz.CurrentQuestionIndex}-{answer.Index}")"
+                                    type="checkbox"
+                                    @bind="answer.IsSelected" />
+                            }
+                            else
+                            {
+                                <input 
+                                    id="@($"{Quiz.CurrentQuestionIndex}-{answer.Index}")"
+                                    type="radio"
+                                    name="@($"question-{Quiz.CurrentQuestionIndex}")"
+                                    value="@answer.Index"
+                                    checked="@answer.IsSelected"
+                                    @onchange="() => Quiz.CurrentQuestion.SelectSingleAnswer(answer.Index)"
+                                />
+                            }
+                            <label for="@($"{Quiz.CurrentQuestionIndex}-{answer.Index}")">@answer.Text</label>
+                    </li>
+                }
+            </ul>
+        </div>
+    }
+
+    <div class="controls">
+        <button class="btn btn-success" @onclick="Start" disabled="@Quiz.IsStartDisabled">Start</button>
+        <button class="btn btn-primary" @onclick="Previous" disabled="@Quiz.IsNavigationDisabled">Prev.</button>
+        <button class="btn btn-primary" @onclick="Next" disabled="@Quiz.IsNavigationDisabled">Next</button>
+        <button class="btn btn-danger" @onclick="Finish" disabled="@Quiz.IsFinishDisabled">Finish</button>
+        <button class="btn btn-secondary" @onclick="Reset" disabled="@Quiz.IsResetDisabled">Reset</button>
+    </div>
+</div>

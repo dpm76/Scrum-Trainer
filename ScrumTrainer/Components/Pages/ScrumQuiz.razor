@@ -1,0 +1,23 @@
+@page "/quiz"
+
+@using ScrumTrainer.BusinessLogic
+@using Microsoft.Extensions.Options
+
+@rendermode InteractiveServer
+
+@inject IOptions<ScrumTrainerConfiguration> config
+
+<PageTitle>Scrum Quiz</PageTitle>
+
+<h1>Scrum Quiz</h1>
+
+<QuizViewer Quiz="@quiz" />
+
+@code{
+    public required Quiz quiz;
+
+    protected override void OnInitialized()
+    {
+        quiz = new Quiz(config.Value.QuestionsCount, config.Value.TimeLimitInSeconds);
+    }
+}

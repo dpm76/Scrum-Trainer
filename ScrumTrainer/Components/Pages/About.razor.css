@@ -1,0 +1,100 @@
+section {
+    max-width: 900px;
+    margin: 80px auto;
+    padding: 30px;
+    background: #fff;
+    border-radius: 12px;
+    box-shadow: 0 8px 25px rgba(0,0,0,0.05);
+}
+
+section h2 {
+    text-align: center;
+    font-size: 2rem;
+    color: #004aad;
+    margin-bottom: 30px;
+}
+
+#about .github-link {
+    font-weight: 700;
+    color: #004aad;
+    text-decoration: none;
+    font-size: 1.1rem;
+    border-bottom: 2px solid #004aad;
+    transition: 0.3s;
+}
+
+#about .github-link:hover {
+    color: #0078ff;
+    border-color: #0078ff;
+    transform: scale(1.03);
+}
+
+/* ==== FEATURES ==== */
+
+.features-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+    gap: 20px;
+}
+
+.feature-card {
+    background: #f5f7fa;
+    padding: 18px;
+    border-radius: 10px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.04);
+    transition: 0.3s;
+}
+
+.feature-card:hover {
+    transform: scale(1.03);
+    box-shadow: 0 6px 22px rgba(0,0,0,0.08);
+}
+
+.feature-card h3 {
+    color: #004aad;
+    margin-bottom: 10px;
+}
+
+/* ==== ROADMAP ==== */
+
+.roadmap-list {
+    list-style: none;
+    padding: 0;
+    line-height: 1.8;
+}
+
+.roadmap-list li {
+    padding: 10px 0;
+    border-bottom: 1px dashed #c9d6e6;
+}
+
+
+/* ==== CONTACT ==== */
+.contact-box a {
+    color: #004aad;
+    font-weight: 600;
+    text-decoration: none;
+}
+
+.contact-box a:hover {
+    text-decoration: underline;
+}
+
+/* ==== FEATURE ICONS ==== */
+.feature-icon {
+    width: 50px;
+    height: 50px;
+    margin-bottom: 12px;
+}
+
+.feature-icon svg {
+    width: 100%;
+    height: 100%;
+    fill: #004aad;
+    transition: transform 0.3s, opacity 0.3s;
+}
+
+.feature-card:hover svg {
+    transform: scale(1.15);
+    opacity: 0.85;
+}
