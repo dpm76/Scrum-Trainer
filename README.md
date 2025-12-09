@@ -11,6 +11,15 @@ The system provides a timed quiz with single and multiple choice questions, navi
 
 ---
 
+## 🔗 Live Demo
+
+You can try the application online here:  
+👉 **https://scrum-trainer.davidpm.eu**
+
+This live version allows you to experience the quiz system, test the timer-based flow, navigate questions, and review results just as you would in a real PSM I practice session.
+
+---
+
 ## 🎯 Purpose of the Project
 
 This project was created with two primary goals:
