@@ -1,4 +1,5 @@
 using System.Text.Json;
+using ScrumTrainer.Extensions;
 using ScrumTrainer.Models;
 
 namespace ScrumTrainer.BusinessLogic;
@@ -16,9 +17,7 @@ public class JsonQuestionSetProvider : IQuestionSetProvider
                 ?? throw new ApplicationException("No questions found in JSON file");
 
             var random = new Random();
-            return [.. allQuestions
-                .OrderBy(x => random.Next())
-                .Take(questionsCount)];  
+            return [.. allQuestions.TakeShuffled(questionsCount)];
         }
         catch (Exception ex)
         {
