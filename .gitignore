@@ -482,3 +482,8 @@ $RECYCLE.BIN/
 
 # Vim temporary swap files
 *.swp
+
+# Databases
+ScrumTrainer/Data/scrum_trainer.db
+ScrumTrainer/Data/scrum_trainer.db-shm
+ScrumTrainer/Data/scrum_trainer.db-wal
