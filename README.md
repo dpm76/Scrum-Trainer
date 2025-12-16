@@ -47,7 +47,7 @@ The repository will continue to evolve with more features over time.
 | Correct/incorrect answer feedback | ✅ |
 | Clean Code + Unit Testing | 🧪 active |
 | Responsive UI | 🧪 improving |
-| User accounts & login system | 🔜 planned |
+| User accounts & login system | ✅ |
 | Result history stored on user profile | 🔜 planned |
 | Analytics and progress evolution | 🟦 future proposal |
 
@@ -65,23 +65,33 @@ The repository will continue to evolve with more features over time.
 
 ---
 
-## 🔧 Installation & Local Execution
+## 🎁 Installation & Local Execution
 
-### 1️⃣ Clone the repository
+### 💾 Clone the repository
 
 ```bash
 git clone https://github.com/dpm76/Scrum-Trainer.git
 cd Scrum-Trainer
-````
+```
 
----
+### 🔧 Install EntityFramework tools
 
-### 2️⃣ Run locally (development mode)
+```bash
+dotnet tool install --global dotnet-ef --version 8.0.22
+```
+
+### 🗄️ Create and Update Database
+
+```bash
+dotnet ef database update --project ScrumTrainer
+```
+
+### 🚀 Run locally (development mode)
 
 Ensure **.NET 8 SDK** is installed.
 
 ```bash
-dotnet run
+dotnet run --project ScrumTrainer
 ```
 
 Visit the app in your browser:
@@ -96,11 +106,15 @@ or with HTTPS
 https://localhost:7055
 ```
 
-Hot reload will apply code changes instantly.
+### 🧪 Run Tests (optional)
 
----
+If you do some changes and want to check whether your changes don't break the code.
 
-### 3️⃣ Build for production
+```bash
+dotnet test -v n
+```
+
+### 🏗️ Build for production (optional)
 
 ```bash
 dotnet publish --configuration Release
@@ -116,13 +130,13 @@ Can be hosted in any ASP.NET serving environment.
 
 ---
 
-## 🚀 Roadmap
+## 🛣️ Roadmap
 
 ### 📌 Short-term roadmap
 
-- Authentication & user login (planned)
-- Database integration for saving results
-- User progress history view
+- Authentication & user login ✅
+- Database integration for saving results (🔜 planned)
+- User progress history view (🔜 planned)
 
 ### 📌 Medium-term roadmap
 
