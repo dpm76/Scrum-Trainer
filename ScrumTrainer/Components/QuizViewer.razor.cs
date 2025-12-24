@@ -25,11 +25,19 @@ public partial class QuizViewer
     private string GetAnswerEnabledCssClass() 
         => Quiz.IsStarted ? @"answer-enabled" : @"answer-disabled";
 
-    protected override void OnInitialized()
+    protected override async Task OnInitializedAsync()
     {
         Quiz.TimeTakenInSeconds.Changed += OnObservablePropertyChanged;
         Quiz.IsCompleted.Changed += OnObservablePropertyChanged;
         Quiz.IsStarted.Changed += OnObservablePropertyChanged;
+
+        var authState = await AuthenticationStateProvider.GetAuthenticationStateAsync();
+        var user = authState.User;
+
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            Quiz.User = await UserManager.GetUserAsync(user) ?? default!;
+        }
     }
 
     private void OnObservablePropertyChanged() 

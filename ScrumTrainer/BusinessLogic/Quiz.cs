@@ -1,4 +1,5 @@
 using System.Timers;
+using ScrumTrainer.Data;
 using ScrumTrainer.Models;
 using Timer = System.Timers.Timer;
 
@@ -26,6 +27,8 @@ public sealed class Quiz: IQuizStatusProvider, IDisposable
     public bool IsFinishDisabled { get => !IsStarted; }
 
     public bool IsResetDisabled { get => !IsStarted && !IsCompleted; }
+
+    public ApplicationUser User { get; set; }
 
     private readonly Timer _timer;
 
