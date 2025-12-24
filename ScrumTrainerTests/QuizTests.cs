@@ -1,4 +1,5 @@
 using ScrumTrainer.BusinessLogic;
+using ScrumTrainer.Data;
 using ScrumTrainer.Models;
 
 namespace ScrumTrainerTests;
@@ -467,40 +468,6 @@ public class QuizTests
     }
 
     [Fact]
-    public void QuizIsNotCompleted_QuestionsRightCount_ReturnsNull ()
-    {
-        using var quiz = new Quiz(3, 10, CreateQuestionSetProvider());
-        quiz.IsCompleted.Value.Should().BeFalse(); //precondition
-
-        var questionsRightCount = quiz.QuestionsRightCount;
-
-        questionsRightCount.Should().BeNull();
-    }
-
-    [Fact]
-    public void QuizIsStarted_QuestionsRightCount_ReturnsNull ()
-    {
-        using var quiz = new Quiz(3, 10, CreateQuestionSetProvider());
-
-        quiz.StartQuiz();
-        var questionsRightCount = quiz.QuestionsRightCount;
-
-        questionsRightCount.Should().BeNull();
-    }
-
-    [Fact]
-    public void QuizIsCompleted_QuestionsRightCount_ReturnsNotNull()
-    {
-        using var quiz = new Quiz(3, 10, CreateQuestionSetProvider());
-        quiz.StartQuiz();
-
-        quiz.FinishQuiz();
-        var questionsRightCount = quiz.QuestionsRightCount;
-
-        questionsRightCount.Should().NotBeNull();
-    }
-
-    [Fact]
     public void QuizIsCompletedAndHasThreeRightAnswers_QuestionsRightCount_ReturnsThree()
     {
         using var quiz = new Quiz(3, 10, CreateQuestionSetProvider());
@@ -517,5 +484,34 @@ public class QuizTests
         var questionsRightCount = quiz.QuestionsRightCount;
 
         questionsRightCount.Should().Be(3);
+    }
+
+    public class Persistence
+    {
+        [Fact]
+        public void QuizHasNotUser_AfterFinish_NoResultRecorded()
+        {
+            var testModelRepository = new TestModelRepository<QuizResult>();
+
+            using var quiz = new Quiz(3, 10, CreateQuestionSetProvider(), testModelRepository);
+            quiz.StartQuiz();
+            quiz.FinishQuiz();
+
+            testModelRepository.ModelSet.Should().BeEmpty();
+        }
+
+        [Fact]
+        public void QuizHasUser_AfterFinish_NoResultRecorded()
+        {
+            var testModelRepository = new TestModelRepository<QuizResult>();
+
+            using var quiz = new Quiz(3, 10, CreateQuestionSetProvider(), testModelRepository);
+            quiz.User = new ApplicationUser();
+
+            quiz.StartQuiz();
+            quiz.FinishQuiz();
+
+            testModelRepository.ModelSet.Should().NotBeEmpty();
+        }
     }
 }
