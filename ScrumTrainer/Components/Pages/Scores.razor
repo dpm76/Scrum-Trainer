@@ -1,0 +1,35 @@
+@page "/scores"
+
+@attribute [Authorize]
+
+@using Microsoft.AspNetCore.Authorization
+@using Microsoft.AspNetCore.Identity
+@using ScrumTrainer.BusinessLogic
+@using ScrumTrainer.Data
+@using ScrumTrainer.Models
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject UserManager<ApplicationUser> UserManager
+@inject ApplicationDbContext dbContext
+
+<PageTitle>Scores</PageTitle>
+
+<h1>Scores</h1>
+
+<ScoresViewer ResultsProvider="@resultsProvider" />
+
+@code{
+    public required ResultsProvider resultsProvider;
+
+    protected override async Task OnInitializedAsync()
+    {
+
+        var user = (await AuthenticationStateProvider.GetAuthenticationStateAsync()).User;
+        if (user.Identity?.IsAuthenticated == true)
+        {
+            var applicationUser = await UserManager.GetUserAsync(user) ?? default!;
+
+            resultsProvider = new ResultsProvider(applicationUser, new DbModelRepository<QuizResult>(dbContext));
+        }
+    }
+}

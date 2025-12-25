@@ -2,10 +2,12 @@
 
 @using ScrumTrainer.BusinessLogic
 @using Microsoft.Extensions.Options
+@using ScrumTrainer.Data
 
 @rendermode InteractiveServer
 
 @inject IOptions<ScrumTrainerConfiguration> config
+@inject ApplicationDbContext dbContext
 
 <PageTitle>Scrum Quiz</PageTitle>
 
@@ -18,6 +20,6 @@
 
     protected override void OnInitialized()
     {
-        quiz = new Quiz(config.Value.QuestionsCount, config.Value.TimeLimitInSeconds);
+        quiz = new Quiz(config.Value.QuestionsCount, config.Value.TimeLimitInSeconds, dbContext);
     }
 }

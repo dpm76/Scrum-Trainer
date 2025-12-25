@@ -1,12 +1,27 @@
 @rendermode InteractiveServer
 
+@using Microsoft.AspNetCore.Identity
 @using ScrumTrainer.BusinessLogic
+@using ScrumTrainer.Data
 
 @namespace ScrumTrainer.Components
+
+@inject AuthenticationStateProvider AuthenticationStateProvider
+@inject UserManager<ApplicationUser> UserManager
 
 <div class="quiz-container">
 
     <h3>Quiz</h3>
+
+    @if(Quiz.User is not null)
+    {
+        <p>Hi, @Quiz.User.NormalizedUserName?.ToLower()!</p>
+    }
+    else
+    {  
+        <p><strong>Warning: </strong>You are using this quiz as an anonymous user. <strong>Your quiz's result won't be recorded.</strong></p>
+    }
+        
 
     @if(!Quiz.IsStarted && !Quiz.IsCompleted)
     {

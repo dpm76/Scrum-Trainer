@@ -1,0 +1,22 @@
+@media (max-width: 576px) {
+    .responsive-table thead {
+        display: none;
+    }
+
+    .responsive-table tr {
+        display: block;
+        margin-bottom: 1rem;
+        border: 1px solid #ddd;
+    }
+
+    .responsive-table td {
+        display: flex;
+        justify-content: space-between;
+        padding: .5rem;
+    }
+
+    .responsive-table td::before {
+        content: attr(data-label);
+        font-weight: bold;
+    }
+}
