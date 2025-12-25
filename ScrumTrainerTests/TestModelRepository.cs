@@ -6,13 +6,23 @@ namespace ScrumTrainerTests;
 
 public class TestModelRepository<T> : IModelRepository<T> where T : class
 {
-    private readonly List<T>_modelSet = [];
-    private int _nextId = 1;
+    private readonly List<T>_modelSet;
+    private int _nextId;
 
     public List<T> ModelSet{ get => _modelSet; }
 
     private readonly PropertyInfo _idPropertyInfo = typeof(T).GetProperty("Id") 
                 ?? throw new InvalidOperationException($"Type {typeof(T).Name} does not have an 'Id' property");
+
+    public TestModelRepository() : this([], 1)
+    {
+    }
+
+    public TestModelRepository(ICollection<T> initialCollection, int nextId)
+    {
+        _modelSet = [.. initialCollection];
+        _nextId = nextId;
+    }
 
     public Task Delete(T model)
     {

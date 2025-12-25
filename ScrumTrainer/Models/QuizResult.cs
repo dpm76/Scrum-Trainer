@@ -1,3 +1,4 @@
+using System.ComponentModel.DataAnnotations.Schema;
 using ScrumTrainer.Data;
 
 namespace ScrumTrainer.Models;
@@ -12,4 +13,7 @@ public record QuizResult
     public int TotalQuestionsCount { get; set; }
     public int SecondsTaken { get; set; }
     public int MaxSeconds { get; set; }
+
+    [NotMapped]
+    public double RightAnswerRate { get => (double)RightQuestionsCount / TotalQuestionsCount; }
 }
