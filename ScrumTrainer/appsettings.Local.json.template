@@ -1,0 +1,10 @@
+{
+    "EMailSettings": {
+    "SmtpServer": "smtp.mail-server.com",
+    "SmtpPort": 587,
+    "SenderName": "Scrum-Trainer",
+    "SenderEmail": "your-user@your-domain.com",
+    "Username": "smtp username",
+    "Password": "password/app-key"
+  }
+}

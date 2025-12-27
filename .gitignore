@@ -487,3 +487,4 @@ $RECYCLE.BIN/
 ScrumTrainer/Data/scrum_trainer.db
 ScrumTrainer/Data/scrum_trainer.db-shm
 ScrumTrainer/Data/scrum_trainer.db-wal
+ScrumTrainer/appsettings.Local.json
