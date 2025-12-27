@@ -86,6 +86,63 @@ dotnet tool install --global dotnet-ef --version 8.0.22
 dotnet ef database update --project ScrumTrainer
 ```
 
+## 📧 Email (SMTP) Configuration
+
+This project uses an SMTP server to send transactional emails (e.g. email confirmation during user registration).
+
+For security reasons, **SMTP credentials are not committed to the repository**. Instead, a local configuration file is used and ignored by Git.
+
+### 🔒 Local configuration file
+
+The repository includes the following template file:
+
+```text
+appsettings.Local.json.template
+```
+
+To configure email sending locally, follow these steps:
+
+   1. **Create a copy of the template file** and rename it to:
+
+      ```text
+      appsettings.Local.json
+      ```
+
+   2. **Fill in your SMTP settings** in the newly created file:
+
+      ```json
+      {
+         "EMailSettings": {
+            "SmtpServer": "smtp.mail-server.com",
+            "SmtpPort": 587,
+            "SenderName": "Scrum-Trainer",
+            "SenderEmail": "your-user@your-domain.com",
+            "Username": "smtp username",
+            "Password": "password/app-key"
+      }
+      ```
+
+   3. The file `appsettings.Local.json` is listed in `.gitignore`, so it will **never be committed** to the repository.
+
+### ⚙️ How it works
+
+At startup, the application loads configuration in the following order:
+
+   1. `appsettings.json`
+   2. `appsettings.Development.json`
+   3. `appsettings.Local.json` (if present)
+
+This allows sensitive data (such as SMTP credentials) to remain local while keeping the repository clean and safe.
+
+---
+
+### 🚀 Notes
+
+- The SMTP configuration is required for email-based features such as **account confirmation**.
+- For production environments, it is recommended to use **environment variables** or a secure secrets manager.
+
+---
+
 ### 🚀 Run locally (development mode)
 
 Ensure **.NET 8 SDK** is installed.
