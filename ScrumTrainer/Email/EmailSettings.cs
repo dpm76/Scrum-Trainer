@@ -1,4 +1,4 @@
-namespace ScrumTrainer;
+namespace ScrumTrainer.Email;
 
 public record EmailSettings
 {

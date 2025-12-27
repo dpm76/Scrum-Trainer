@@ -5,6 +5,7 @@ using ScrumTrainer;
 using ScrumTrainer.Components;
 using ScrumTrainer.Components.Account;
 using ScrumTrainer.Data;
+using ScrumTrainer.Email;
 
 var builder = WebApplication.CreateBuilder(args);
 

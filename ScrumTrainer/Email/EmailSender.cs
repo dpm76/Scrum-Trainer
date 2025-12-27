@@ -1,14 +1,18 @@
-using System.Net;
 using System.Net.Mail;
 using Microsoft.AspNetCore.Identity;
 using Microsoft.Extensions.Options;
 using ScrumTrainer.Data;
 
-namespace ScrumTrainer;
+namespace ScrumTrainer.Email;
 
-public class EmailSender(IOptions<EmailSettings> settings) : IEmailSender<ApplicationUser>
+public class EmailSender(IOptions<EmailSettings> settings, ISmtpClient smtpClient) : IEmailSender<ApplicationUser>
 {
     private readonly EmailSettings _settings = settings.Value;
+    private readonly ISmtpClient _smtpClient = smtpClient;
+
+    public EmailSender(IOptions<EmailSettings> settings): this(settings, new SmtpClientWrapper(settings))
+    {
+    }
 
     public async Task SendConfirmationLinkAsync(ApplicationUser user, string email, string confirmationLink)
         => await SendEmailAsync(user.Email ?? string.Empty, "Confirmation Link", confirmationLink);
@@ -26,12 +30,6 @@ public class EmailSender(IOptions<EmailSettings> settings) : IEmailSender<Applic
             return;
         }
 
-        using var client = new SmtpClient(_settings.SmtpServer, _settings.SmtpPort)
-        {
-            Credentials = new NetworkCredential(_settings.Username, _settings.Password),
-            EnableSsl = true
-        };
-
         var mail = new MailMessage
         {
             From = new MailAddress(_settings.SenderEmail, _settings.SenderName),
@@ -42,6 +40,6 @@ public class EmailSender(IOptions<EmailSettings> settings) : IEmailSender<Applic
 
         mail.To.Add(email);
 
-        await client.SendMailAsync(mail);
+        await _smtpClient.SendMailAsync(mail);
     }
 }
