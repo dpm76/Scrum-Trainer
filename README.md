@@ -14,7 +14,7 @@ The system provides a timed quiz with single and multiple choice questions, navi
 ## 🔗 Live Demo
 
 You can try the application online here:  
-👉 **https://scrum-trainer.davidpm.eu**
+👉 **<https://scrum-trainer.davidpm.eu>**
 
 This live version allows you to experience the quiz system, test the timer-based flow, navigate questions, and review results just as you would in a real PSM I practice session.
 
@@ -26,20 +26,20 @@ This project was created with two primary goals:
 
 1. **Help users prepare for the PSM I exam** through realistic, repeatable practice sessions.
 2. **Serve as part of my software engineering portfolio**, demonstrating:
-   - Clean Code and maintainable structure
-   - Dependency Inversion as core architectural principle
-   - Unit Test orientation for long-term reliability
-   - Front-end UI development with Blazor
-   - Planning for authentication, data persistence and user-based progress analysis
+   - **Clean Code** and maintainable structure
+   - **Dependency** Inversion as core architectural principle
+   - **Unit Test** orientation for long-term reliability
+   - Front-end UI development with **Blazor**
+   - Authentication, data persistence and *planned* user-based progress analysis
 
-The repository will continue to evolve with more features over time.
+ 👉 The repository will continue to evolve with more features over time.
 
 ---
 
 ## ✨ Main Features
 
 | Feature | Status |
-|--------|:------:|
+| ------- | :----: |
 | Timed exam-like quiz | ✅ |
 | Single/multiple answer questions | ✅ |
 | Navigate forward/back between questions | ✅ |
@@ -48,7 +48,7 @@ The repository will continue to evolve with more features over time.
 | Clean Code + Unit Testing | 🧪 active |
 | Responsive UI | 🧪 improving |
 | User accounts & login system | ✅ |
-| Result history stored on user profile | 🔜 planned |
+| Result history stored on user profile | ✅ |
 | Analytics and progress evolution | 🟦 future proposal |
 
 ---
@@ -56,11 +56,11 @@ The repository will continue to evolve with more features over time.
 ## 🛠 Tech Stack
 
 | Layer | Technology |
-|------|------------|
+| ----- | ---------- |
 | UI + App Logic | **Blazor** (WASM/Server depending on build) |
 | Web Framework | **ASP.NET Core (.NET 8)** |
-| Database | Planned (Entity Framework Core) |
-| Authentication | Planned — OAuth2 / Identity concepts |
+| Database | Entity Framework Core |
+| Authentication | Identity ✅ and OAuth2 (🔜 planned) concepts |
 | Architecture | Clean Code + DIP + best practices |
 
 ---
@@ -136,7 +136,7 @@ This allows sensitive data (such as SMTP credentials) to remain local while keep
 
 ---
 
-### 🚀 Notes
+### 📝 Notes
 
 - The SMTP configuration is required for email-based features such as **account confirmation**.
 - For production environments, it is recommended to use **environment variables** or a secure secrets manager.
