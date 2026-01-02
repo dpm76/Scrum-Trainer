@@ -14,7 +14,7 @@ The system provides a timed quiz with single and multiple choice questions, navi
 ## 🔗 Live Demo
 
 You can try the application online here:  
-👉 **https://scrum-trainer.davidpm.eu**
+👉 **<https://scrum-trainer.davidpm.eu>**
 
 This live version allows you to experience the quiz system, test the timer-based flow, navigate questions, and review results just as you would in a real PSM I practice session.
 
@@ -26,20 +26,20 @@ This project was created with two primary goals:
 
 1. **Help users prepare for the PSM I exam** through realistic, repeatable practice sessions.
 2. **Serve as part of my software engineering portfolio**, demonstrating:
-   - Clean Code and maintainable structure
-   - Dependency Inversion as core architectural principle
-   - Unit Test orientation for long-term reliability
-   - Front-end UI development with Blazor
-   - Planning for authentication, data persistence and user-based progress analysis
+   - **Clean Code** and maintainable structure
+   - **Dependency** Inversion as core architectural principle
+   - **Unit Test** orientation for long-term reliability
+   - Front-end UI development with **Blazor**
+   - Authentication, data persistence and *planned* user-based progress analysis
 
-The repository will continue to evolve with more features over time.
+ 👉 The repository will continue to evolve with more features over time.
 
 ---
 
 ## ✨ Main Features
 
 | Feature | Status |
-|--------|:------:|
+| ------- | :----: |
 | Timed exam-like quiz | ✅ |
 | Single/multiple answer questions | ✅ |
 | Navigate forward/back between questions | ✅ |
@@ -48,7 +48,7 @@ The repository will continue to evolve with more features over time.
 | Clean Code + Unit Testing | 🧪 active |
 | Responsive UI | 🧪 improving |
 | User accounts & login system | ✅ |
-| Result history stored on user profile | 🔜 planned |
+| Result history stored on user profile | ✅ |
 | Analytics and progress evolution | 🟦 future proposal |
 
 ---
@@ -56,11 +56,11 @@ The repository will continue to evolve with more features over time.
 ## 🛠 Tech Stack
 
 | Layer | Technology |
-|------|------------|
+| ----- | ---------- |
 | UI + App Logic | **Blazor** (WASM/Server depending on build) |
 | Web Framework | **ASP.NET Core (.NET 8)** |
-| Database | Planned (Entity Framework Core) |
-| Authentication | Planned — OAuth2 / Identity concepts |
+| Database | Entity Framework Core |
+| Authentication | Identity ✅ and OAuth2 (🔜 planned) concepts |
 | Architecture | Clean Code + DIP + best practices |
 
 ---
@@ -85,6 +85,63 @@ dotnet tool install --global dotnet-ef --version 8.0.22
 ```bash
 dotnet ef database update --project ScrumTrainer
 ```
+
+## 📧 Email (SMTP) Configuration
+
+This project uses an SMTP server to send transactional emails (e.g. email confirmation during user registration).
+
+For security reasons, **SMTP credentials are not committed to the repository**. Instead, a local configuration file is used and ignored by Git.
+
+### 🔒 Local configuration file
+
+The repository includes the following template file:
+
+```text
+appsettings.Local.json.template
+```
+
+To configure email sending locally, follow these steps:
+
+   1. **Create a copy of the template file** and rename it to:
+
+      ```text
+      appsettings.Local.json
+      ```
+
+   2. **Fill in your SMTP settings** in the newly created file:
+
+      ```json
+      {
+         "EMailSettings": {
+            "SmtpServer": "smtp.mail-server.com",
+            "SmtpPort": 587,
+            "SenderName": "Scrum-Trainer",
+            "SenderEmail": "your-user@your-domain.com",
+            "Username": "smtp username",
+            "Password": "password/app-key"
+      }
+      ```
+
+   3. The file `appsettings.Local.json` is listed in `.gitignore`, so it will **never be committed** to the repository.
+
+### ⚙️ How it works
+
+At startup, the application loads configuration in the following order:
+
+   1. `appsettings.json`
+   2. `appsettings.Development.json`
+   3. `appsettings.Local.json` (if present)
+
+This allows sensitive data (such as SMTP credentials) to remain local while keeping the repository clean and safe.
+
+---
+
+### 📝 Notes
+
+- The SMTP configuration is required for email-based features such as **account confirmation**.
+- For production environments, it is recommended to use **environment variables** or a secure secrets manager.
+
+---
 
 ### 🚀 Run locally (development mode)
 
