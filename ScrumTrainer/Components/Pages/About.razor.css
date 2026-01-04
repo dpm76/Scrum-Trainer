@@ -29,6 +29,10 @@ section h2 {
     transform: scale(1.03);
 }
 
+.source-code-link-area {
+    text-align:center; margin-top:35px;
+}
+
 /* ==== FEATURES ==== */
 
 .features-grid {

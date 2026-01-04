@@ -1,4 +1,7 @@
 ﻿@inherits LayoutComponentBase
+@using Microsoft.Extensions.Options
+
+@inject IOptions<ScrumTrainerConfiguration> config
 
 <div class="page">
     <div class="sidebar">
@@ -8,8 +11,8 @@
     <main>
 
         <div class="top-row px-4">
-            <a href="https://www.linkedin.com/in/dpm-itengineer/" target="_blank">Author's LinkedIn</a>
-            <a href="https://github.com/dpm76/Scrum-Trainer" target="_blank">Source Code</a>
+            <a href="@config.Value.LinkedInLink" target="_blank">Author's LinkedIn</a>
+            <a href="@config.Value.SourceCodeLink" target="_blank">Source Code</a>
         </div>
         <article class="content px-4">
             @Body
