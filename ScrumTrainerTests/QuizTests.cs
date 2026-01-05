@@ -514,4 +514,56 @@ public class QuizTests
             testModelRepository.ModelSet.Should().NotBeEmpty();
         }
     }
+
+    public class RightRate
+    {
+        [Fact]
+        public void NotAllAnswersAreRight_RightRate_IsNotZero()
+        {
+            var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            foreach(var question in quiz.Questions)
+            {
+                question.SelectSingleAnswer(0);
+            }
+            quiz.Questions.ElementAt(0).SelectSingleAnswer(1);
+            quiz.FinishQuiz();
+
+            var rate = quiz.RightRate;
+
+            rate.Should().BeGreaterThan(0d);
+        }
+
+        [Fact]
+        public void AllAnswersAreRight_RightRate_IsOne()
+        {
+            var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            foreach(var question in quiz.Questions)
+            {
+                question.SelectSingleAnswer(0);
+            }
+            quiz.FinishQuiz();
+
+            var rate = quiz.RightRate;
+
+            rate.Should().Be(1d);
+        }
+
+        [Fact]
+        public void AllAnswersAreWrong_RightRate_IsZero()
+        {
+            var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            foreach(var question in quiz.Questions)
+            {
+                question.SelectSingleAnswer(1);
+            }
+            quiz.FinishQuiz();
+
+            var rate = quiz.RightRate;
+
+            rate.Should().Be(0d);
+        }
+    }
 }

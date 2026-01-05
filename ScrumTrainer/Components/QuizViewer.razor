@@ -41,7 +41,7 @@
     {
         <div class="quiz-info quiz-completed">
             <h4>Quiz completed!</h4>
-            <p class="quiz-results"><strong>Right Answers:</strong> @Quiz.QuestionsRightCount / @Quiz.QuestionsCount</p>
+            <p class="quiz-results"><strong>Right Answers:</strong> @Quiz.QuestionsRightCount / @Quiz.QuestionsCount (@Quiz.RightRate.ToString(@"P0"))</p>
             <div><strong>Question:</strong> @(Quiz.CurrentQuestionIndex + 1) / @Quiz.QuestionsCount</div>
         </div>
     }

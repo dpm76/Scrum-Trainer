@@ -43,6 +43,8 @@ public sealed class Quiz: IQuizStatusProvider, IDisposable
         get => Questions?.Count( q => q.IsRight ) ?? 0;
     }
 
+    public double RightRate { get => (double) QuestionsRightCount / QuestionsCount; }
+
     public Quiz(int questionsCount, int timeLimitInSeconds)
         :this(questionsCount, timeLimitInSeconds, new JsonQuestionSetProvider(), null)
     {
