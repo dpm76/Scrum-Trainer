@@ -1,0 +1,74 @@
+<svg viewBox="0 0 768 384" xmlns="http://www.w3.org/2000/svg">
+  <defs>
+    <linearGradient id="segmentGradient1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="segmentGradient2" x1="100%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+    <linearGradient id="segmentGradient3" x1="100%" y1="100%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ffffff;stop-opacity:0" />
+      <stop offset="100%" style="stop-color:#ffffff;stop-opacity:0.6" />
+    </linearGradient>
+  </defs>
+  
+  <!-- Transparent background -->
+  <rect width="768" height="384" fill="transparent"/>
+  
+  <!-- Scrum circle (representing iterative cycle) -->
+  <g transform="translate(180, 192)">
+    <!-- Outer circle -->
+    <circle cx="0" cy="0" r="90" fill="none" stroke="#ffffff" stroke-width="8" opacity="0.3"/>
+    
+    <!-- Middle circle -->
+    <circle cx="0" cy="0" r="70" fill="none" stroke="#ffffff" stroke-width="6" opacity="0.5"/>
+    
+    <!-- Circle segments with gradient -->
+    <path d="M 0,-70 A 70,70 0 0,1 60.6,-35" fill="none" stroke="url(#segmentGradient1)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M 60.6,35 A 70,70 0 0,1 0,70" fill="none" stroke="url(#segmentGradient2)" stroke-width="7" stroke-linecap="round"/>
+    <path d="M -60.6,35 A 70,70 0 0,1 -60.6,-35" fill="none" stroke="url(#segmentGradient3)" stroke-width="7" stroke-linecap="round"/>
+    
+
+    
+    <!-- Center - check/certification symbol -->
+    <circle cx="0" cy="0" r="35" fill="#004aad"/>
+    <path d="M -12,0 L -5,12 L 15,-15" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+  
+  <!-- SCRUM TRAINER text -->
+  <g transform="translate(340, 192)">
+    <!-- SCRUM -->
+    <text x="0" y="-15" font-family="Arial, sans-serif" font-size="72" font-weight="bold" fill="#ffffff" letter-spacing="2">
+      Scrum
+    </text>
+    
+    <!-- TRAINER -->
+    <text x="0" y="50" font-family="Arial, sans-serif" font-size="48" font-weight="300" fill="#ffffff" letter-spacing="8" opacity="0.95">
+      TRAINER
+    </text>
+    
+    <!-- Decorative line -->
+    <rect x="0" y="0" width="280" height="3" fill="#ffffff" opacity="0.4"/>
+  </g>
+  
+  <!-- Decorative elements - connected sprint loops -->
+  <!-- Series of sprints in the upper right corner -->
+  <g opacity="0.3">
+    <path d="M 600,100 Q 620,80 640,100 Q 660,120 640,140 Q 620,160 600,140 Q 580,120 600,100" 
+          fill="none" stroke="#ffffff" stroke-width="2.5"/>
+    <path d="M 640,120 Q 660,100 680,120 Q 700,140 680,160 Q 660,180 640,160 Q 620,140 640,120" 
+          fill="none" stroke="#ffffff" stroke-width="2.5"/>
+    <path d="M 680,140 Q 700,120 720,140 Q 740,160 720,180 Q 700,200 680,180 Q 660,160 680,140" 
+          fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  </g>
+  
+  <!-- Series of sprints in the lower left corner -->
+  <g opacity="0.25">
+    <path d="M 30,280 Q 50,260 70,280 Q 90,300 70,320 Q 50,340 30,320 Q 10,300 30,280" 
+          fill="none" stroke="#ffffff" stroke-width="2.5"/>
+    <path d="M 70,300 Q 90,280 110,300 Q 130,320 110,340 Q 90,360 70,340 Q 50,320 70,300" 
+          fill="none" stroke="#ffffff" stroke-width="2.5"/>
+  </g>
+</svg>

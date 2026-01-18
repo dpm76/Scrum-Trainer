@@ -131,3 +131,11 @@
         overflow-y: auto;
     }
 }
+
+div.logo-container {
+    height: 128px;
+}
+
+img.logo {
+    height: 96px;
+}
