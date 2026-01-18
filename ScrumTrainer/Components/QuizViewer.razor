@@ -96,10 +96,24 @@
     }
 
     <div class="controls">
-        <button class="btn btn-success" @onclick="Start" disabled="@Quiz.IsStartDisabled">Start</button>
+        @if (Quiz.IsCompleted)
+        {
+            <div class="controls-line">
+                <button class="btn btn-secondary" @onclick="PreviousFailed" disabled="@Quiz.IsNavigationDisabled">Prev. Failed</button>
+                <button class="btn btn-secondary" @onclick="NextFailed" disabled="@Quiz.IsNavigationDisabled">Next Failed</button>
+            </div>
+        }
+        <div class="controls-line">
+            <button class="btn btn-secondary" @onclick="First" disabled="@Quiz.IsNavigationDisabled">First</button>
         <button class="btn btn-primary" @onclick="Previous" disabled="@Quiz.IsNavigationDisabled">Prev.</button>
         <button class="btn btn-primary" @onclick="Next" disabled="@Quiz.IsNavigationDisabled">Next</button>
-        <button class="btn btn-danger" @onclick="Finish" disabled="@Quiz.IsFinishDisabled">Finish</button>
-        <button class="btn btn-secondary" @onclick="Reset" disabled="@Quiz.IsResetDisabled">Reset</button>
+            <button class="btn btn-secondary" @onclick="Last" disabled="@Quiz.IsNavigationDisabled">Last</button>
+        </div>
+        <div class="controls-line">
+            <button class="btn btn-success" @onclick="Start" disabled="@Quiz.IsStartDisabled">Start</button>
+            <button class="btn btn-secondary" @onclick="Finish" disabled="@Quiz.IsFinishDisabled">Finish</button>
+            <button class="btn btn-danger" @onclick="Reset" disabled="@Quiz.IsResetDisabled">Reset</button>
+        </div>
+        
     </div>
 </div>

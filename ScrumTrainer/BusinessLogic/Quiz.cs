@@ -181,6 +181,48 @@ public sealed class Quiz: IQuizStatusProvider, IDisposable
         
     }
 
+    public void GoToPreviousFailedQuestion()
+    {
+        if (!IsNavigationDisabled)
+        {
+            CurrentQuestionIndex = Questions
+                .Take(CurrentQuestionIndex)
+                .Select((q, index) => new { Question = q, Index = index })
+                .Where(qi => !qi.Question.IsRight)
+                .Select(qi => qi.Index)
+                .LastOrDefault(CurrentQuestionIndex);
+        }
+    }
+
+    public void GoToNextFailedQuestion()
+    {
+        if (!IsNavigationDisabled)
+        {
+            CurrentQuestionIndex = Questions
+                .Skip(CurrentQuestionIndex + 1)
+                .Select((q, index) => new { Question = q, Index = index + CurrentQuestionIndex + 1 })
+                .Where(qi => !qi.Question.IsRight)
+                .Select(qi => qi.Index)
+                .FirstOrDefault(CurrentQuestionIndex);
+        }
+    }
+
+    public void GoToFirstQuestion()
+    {
+        if (!IsNavigationDisabled)
+        {
+            CurrentQuestionIndex = 0;
+        }
+    }
+
+    public void GoToLastQuestion()
+    {
+        if (!IsNavigationDisabled)
+        {
+            CurrentQuestionIndex = (Questions?.Count ?? 1) - 1;
+        }
+    }
+
     ~Quiz()
     {
         Dispose(false);

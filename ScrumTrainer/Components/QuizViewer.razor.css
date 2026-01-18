@@ -62,9 +62,16 @@
 .controls {
     margin-top: 1.8rem;
     display: flex;
-    justify-content: space-between;
-    flex-wrap: wrap;
+    flex-direction: column;
     gap: 0.7rem;
+    align-items: center;
+}
+
+.controls-line {
+    display: flex;
+    justify-content: center;
+    gap: 0.7rem;
+    flex-wrap: wrap;
 }
 
 .controls button {
@@ -147,13 +154,30 @@ li > input {
     width: 5%;
 }
 
-@media (max-width: 600px) {
-    .quiz-container {
-        padding: 1.4rem;
+@keyframes pulse {
+    0%, 100% {
+        opacity: 1;
+        transform: scale(1);
     }
+    50% {
+        opacity: 0.8;
+        transform: scale(1.05);
+    }
+}
 
-    .controls {
-        flex-direction: column;
-        align-items: stretch;
-    }
+.btn-success {
+    animation: pulse 2s ease-in-out infinite;
+}
+
+.btn-success:disabled {
+    animation: none;
+}
+
+.quiz-container {
+    padding: 1.4rem;
+}
+
+.controls {
+    flex-direction: column;
+    align-items: stretch;
 }

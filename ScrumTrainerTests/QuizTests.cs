@@ -566,4 +566,429 @@ public class QuizTests
             rate.Should().Be(0d);
         }
     }
+
+    public class GoToNextFailedQuestion
+    {
+        [Fact]
+        public void StartWithMultipleFailedQuestions_GoToNextFailedQuestion_NavigatesToNextFailedQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark some questions as failed (by selecting wrong answer)
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 0 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 1 - Correct
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 2 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 3 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 4 - Correct
+
+            // Go back to the first question
+            quiz.CurrentQuestionIndex = 0;
+
+            // Act
+            quiz.GoToNextFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(2); // Next failed question after 0
+        }
+
+        [Fact]
+        public void FromMiddleOfQuiz_GoToNextFailedQuestion_NavigatesToNextFailedQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark some questions as failed
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 0 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 1 - Correct
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 2 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 3 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 4 - Correct
+
+            // Start from question 1
+            quiz.CurrentQuestionIndex = 1;
+
+            // Act
+            quiz.GoToNextFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(2); // Next failed question
+        }
+
+        [Fact]
+        public void NoFailedQuestionsAfterCurrent_GoToNextFailedQuestion_RemainsAtCurrentQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark some questions as failed
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 0 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 1 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 2 - Correct
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 3 - Correct
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 4 - Correct
+
+            // Start from question 3 (no failed questions after this)
+            quiz.CurrentQuestionIndex = 3;
+
+            // Act
+            quiz.GoToNextFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(3); // Remains at current question
+        }
+
+        [Fact]
+        public void AllFailedQuestions_GoToNextFailedQuestion_NavigatesToFirstFailedAfterCurrent()
+        {
+            // Arrange
+            using var quiz = new Quiz(3, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark all questions as failed
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 0 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 1 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 2 - Failed
+
+            // Start from question 0
+            quiz.CurrentQuestionIndex = 0;
+
+            // Act
+            quiz.GoToNextFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(1); // Next failed question
+        }
+
+        [Fact]
+        public void QuizNotStarted_GoToNextFailedQuestion_DoesNotNavigate()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+
+            // Act
+            quiz.GoToNextFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(0);
+        }
+    }
+
+    public class GoToPreviousFailedQuestion
+    {
+        [Fact]
+        public void StartWithMultipleFailedQuestions_GoToPreviousFailedQuestion_NavigatesToLastFailedQuestionBefore()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark some questions as failed
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 0 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 1 - Correct
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 2 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 3 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 4 - Correct
+
+            // Start from question 4
+            quiz.CurrentQuestionIndex = 4;
+
+            // Act
+            quiz.GoToPreviousFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(3); // Previous failed question
+        }
+
+        [Fact]
+        public void FromMiddleOfQuiz_GoToPreviousFailedQuestion_NavigatesToPreviousFailedQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark some questions as failed
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 0 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 1 - Correct
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 2 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 3 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 4 - Correct
+
+            // Start from question 3
+            quiz.CurrentQuestionIndex = 3;
+
+            // Act
+            quiz.GoToPreviousFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(2); // Previous failed question
+        }
+
+        [Fact]
+        public void NoFailedQuestionsBeforeCurrent_GoToPreviousFailedQuestion_RemainsAtCurrentQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark some questions as failed
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 0 - Correct
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 1 - Correct
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 2 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 3 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 4 - Failed
+
+            // Start from question 1 (no failed questions before this)
+            quiz.CurrentQuestionIndex = 1;
+
+            // Act
+            quiz.GoToPreviousFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(1); // Remains at current question
+        }
+
+        [Fact]
+        public void AllFailedQuestions_GoToPreviousFailedQuestion_NavigatesToLastFailedBeforeCurrent()
+        {
+            // Arrange
+            using var quiz = new Quiz(3, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark all questions as failed
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 0 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 1 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 2 - Failed
+
+            // Start from question 2
+            quiz.CurrentQuestionIndex = 2;
+
+            // Act
+            quiz.GoToPreviousFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(1); // Previous failed question
+        }
+
+        [Fact]
+        public void QuizNotStarted_GoToPreviousFailedQuestion_DoesNotNavigate()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+
+            // Act
+            quiz.GoToPreviousFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(0);
+        }
+
+        [Fact]
+        public void OnFirstQuestion_GoToPreviousFailedQuestion_RemainsOnFirstQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+
+            // Mark some questions as failed
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 0 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(1); // Question 1 - Failed
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestion?.SelectSingleAnswer(0); // Question 2 - Correct
+
+            // Start from question 0
+            quiz.CurrentQuestionIndex = 0;
+
+            // Act
+            quiz.GoToPreviousFailedQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(0); // Remains on first question
+        }
+    }
+
+    public class GoToFirstQuestion
+    {
+        [Fact]
+        public void QuizStarted_GoToFirstQuestion_CurrentIsFirstQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            quiz.GoToNextQuestion();
+            quiz.GoToNextQuestion();
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestionIndex.Should().Be(3); // Precondition
+
+            // Act
+            quiz.GoToFirstQuestion();
+
+            // Assert
+            quiz.CurrentQuestion.Should().Be(quiz.Questions.ElementAt(0));
+            quiz.CurrentQuestionIndex.Should().Be(0);
+        }
+
+        [Fact]
+        public void QuizStarted_FromLastQuestion_GoToFirstQuestion_CurrentIsFirstQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            quiz.CurrentQuestionIndex = quiz.Questions.Count - 1;
+            quiz.CurrentQuestionIndex.Should().Be(4); // Precondition
+
+            // Act
+            quiz.GoToFirstQuestion();
+
+            // Assert
+            quiz.CurrentQuestion.Should().Be(quiz.Questions.First());
+            quiz.CurrentQuestionIndex.Should().Be(0);
+        }
+
+        [Fact]
+        public void QuizNotStarted_GoToFirstQuestion_DoesNotNavigate()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.IsNavigationDisabled.Should().BeTrue(); // Precondition
+
+            // Act
+            quiz.GoToFirstQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(0);
+        }
+
+        [Fact]
+        public void AlreadyOnFirstQuestion_GoToFirstQuestion_RemainsOnFirstQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            quiz.CurrentQuestionIndex.Should().Be(0); // Precondition
+
+            // Act
+            quiz.GoToFirstQuestion();
+
+            // Assert
+            quiz.CurrentQuestion.Should().Be(quiz.Questions.First());
+            quiz.CurrentQuestionIndex.Should().Be(0);
+        }
+    }
+
+    public class GoToLastQuestion
+    {
+        [Fact]
+        public void QuizStarted_GoToLastQuestion_CurrentIsLastQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            quiz.CurrentQuestionIndex.Should().Be(0); // Precondition
+
+            // Act
+            quiz.GoToLastQuestion();
+
+            // Assert
+            quiz.CurrentQuestion.Should().Be(quiz.Questions.ElementAt(4));
+            quiz.CurrentQuestionIndex.Should().Be(4);
+        }
+
+        [Fact]
+        public void QuizStarted_FromMiddle_GoToLastQuestion_CurrentIsLastQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            quiz.GoToNextQuestion();
+            quiz.GoToNextQuestion();
+            quiz.CurrentQuestionIndex.Should().Be(2); // Precondition
+
+            // Act
+            quiz.GoToLastQuestion();
+
+            // Assert
+            quiz.CurrentQuestion.Should().Be(quiz.Questions.Last());
+            quiz.CurrentQuestionIndex.Should().Be(4);
+        }
+
+        [Fact]
+        public void QuizNotStarted_GoToLastQuestion_DoesNotNavigate()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.IsNavigationDisabled.Should().BeTrue(); // Precondition
+
+            // Act
+            quiz.GoToLastQuestion();
+
+            // Assert
+            quiz.CurrentQuestionIndex.Should().Be(0);
+        }
+
+        [Fact]
+        public void AlreadyOnLastQuestion_GoToLastQuestion_RemainsOnLastQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(5, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            quiz.CurrentQuestionIndex = quiz.Questions.Count - 1;
+            quiz.CurrentQuestionIndex.Should().Be(4); // Precondition
+
+            // Act
+            quiz.GoToLastQuestion();
+
+            // Assert
+            quiz.CurrentQuestion.Should().Be(quiz.Questions.Last());
+            quiz.CurrentQuestionIndex.Should().Be(4);
+        }
+
+        [Fact]
+        public void SingleQuestion_GoToLastQuestion_CurrentIsTheOnlyQuestion()
+        {
+            // Arrange
+            using var quiz = new Quiz(1, 10, CreateQuestionSetProvider());
+            quiz.StartQuiz();
+            quiz.CurrentQuestionIndex.Should().Be(0); // Precondition
+
+            // Act
+            quiz.GoToLastQuestion();
+
+            // Assert
+            quiz.CurrentQuestion.Should().Be(quiz.Questions.First());
+            quiz.CurrentQuestionIndex.Should().Be(0);
+        }
+    }
 }
