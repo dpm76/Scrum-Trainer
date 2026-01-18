@@ -52,6 +52,18 @@ public partial class QuizViewer
     private void Next() 
         => Quiz.GoToNextQuestion();
 
+    private void PreviousFailed()
+        => Quiz.GoToPreviousFailedQuestion();
+
+    private void NextFailed()
+        => Quiz.GoToNextFailedQuestion();
+
+    private void First()
+        => Quiz.GoToFirstQuestion();
+
+    private void Last()
+        => Quiz.GoToLastQuestion();
+
     private void Finish() 
         => Quiz.FinishQuiz();
 
