@@ -8,4 +8,5 @@ public sealed class ScrumTrainerConfiguration
     public required string PortfolioLink { get; set; }
     public required string SourceCodeLink { get; set; }
     public required string ContactEmail { get; set; }
+    public required string IssueReportLink { get; set; }
 }
