@@ -13,15 +13,16 @@
 
     <h3>Quiz</h3>
 
-    @if(Quiz.User is not null)
-    {
-        <p>Hi, @Quiz.User.NormalizedUserName?.ToLower()!</p>
-    }
-    else
-    {  
-        <p><strong>Warning: </strong>You are using this quiz as an anonymous user. <strong>Your quiz's result won't be recorded.</strong></p>
-    }
-        
+    <div class="user-info">
+        @if(Quiz.User is not null)
+        {
+            <p>Hi, @Quiz.User.NormalizedUserName?.ToLower()!</p>
+        }
+        else
+        {  
+            <p><strong>Warning: </strong>You are using this quiz as an anonymous user. <strong>Your quiz's result won't be recorded.</strong></p>
+        }
+    </div>
 
     @if(!Quiz.IsStarted && !Quiz.IsCompleted)
     {
