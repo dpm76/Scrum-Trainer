@@ -29,6 +29,8 @@ public sealed class Quiz: IQuizStatusProvider, IDisposable
     public bool IsResetDisabled { get => !IsStarted && !IsCompleted; }
 
     public ApplicationUser User { get; set; } = default!;
+    
+    public string SessionId { get; set; } = default!;
 
     private readonly Timer _timer;
 
@@ -66,6 +68,7 @@ public sealed class Quiz: IQuizStatusProvider, IDisposable
     {
         TimeLimitInSeconds = timeLimitInSeconds;
         QuestionsCount = questionsCount;
+        SessionId = Guid.NewGuid().ToString();
 
         _questionSetProvider = questionSetProvider;
         _modelRepository = modelRepository;
@@ -148,19 +151,17 @@ public sealed class Quiz: IQuizStatusProvider, IDisposable
 
     private void RecordResult()
     {
-        if (User is not null)
-        {
-            _modelRepository?.Insert(
-                new QuizResult
-                {
-                    TimeStamp = DateTime.UtcNow, 
-                    UserId = User.Id,
-                    RightQuestionsCount = QuestionsRightCount, 
-                    TotalQuestionsCount = QuestionsCount,
-                    SecondsTaken = TimeTakenInSeconds, 
-                    MaxSeconds = TimeLimitInSeconds
-                });
-        }
+        _modelRepository?.Insert(
+            new QuizResult
+            {
+                TimeStamp = DateTime.UtcNow, 
+                UserId = User?.Id,
+                SessionId = SessionId,
+                RightQuestionsCount = QuestionsRightCount, 
+                TotalQuestionsCount = QuestionsCount,
+                SecondsTaken = TimeTakenInSeconds, 
+                MaxSeconds = TimeLimitInSeconds
+            });
     }
 
     public void Dispose()

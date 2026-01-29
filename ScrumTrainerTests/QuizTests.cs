@@ -489,7 +489,7 @@ public class QuizTests
     public class Persistence
     {
         [Fact]
-        public void QuizHasNotUser_AfterFinish_NoResultRecorded()
+        public void QuizHasNotUser_AfterFinish_ResultRecordedWithSessionId()
         {
             var testModelRepository = new TestModelRepository<QuizResult>();
 
@@ -497,7 +497,72 @@ public class QuizTests
             quiz.StartQuiz();
             quiz.FinishQuiz();
 
-            testModelRepository.ModelSet.Should().BeEmpty();
+            testModelRepository.ModelSet.Should().HaveCount(1);
+            testModelRepository.ModelSet.First().UserId.Should().BeNull();
+            testModelRepository.ModelSet.First().SessionId.Should().NotBeEmpty();
+        }
+
+        [Fact]
+        public void AnonymousUser_FinishesQuiz_ResultSavedAnonymouslyWithSessionId()
+        {
+            // Given: An anonymous user (no User assigned to quiz)
+            var testModelRepository = new TestModelRepository<QuizResult>();
+            using var quiz = new Quiz(3, 10, CreateQuestionSetProvider(), testModelRepository);
+            var sessionId = quiz.SessionId;
+
+            // When: User starts and finishes the quiz
+            quiz.StartQuiz();
+            foreach (var question in quiz.Questions)
+            {
+                question.SelectSingleAnswer(0);
+            }
+            quiz.FinishQuiz();
+
+            // Then: Result is saved anonymously with session tracking
+            var savedResult = testModelRepository.ModelSet.Should().HaveCount(1).And.Subject.First();
+            
+            // Verify anonymous tracking
+            savedResult.UserId.Should().BeNull("User should be null for anonymous results");
+            savedResult.SessionId.Should().Be(sessionId, "Session ID should match the quiz's session ID");
+            savedResult.SessionId.Should().NotBeEmpty("Session ID should not be empty");
+            Guid.TryParse(savedResult.SessionId, out _).Should().BeTrue("Session ID should be a valid GUID");
+
+            // Verify quiz results are properly recorded
+            savedResult.TimeStamp.Should().BeCloseTo(DateTime.UtcNow, TimeSpan.FromSeconds(1));
+            savedResult.RightQuestionsCount.Should().Be(quiz.QuestionsRightCount);
+            savedResult.TotalQuestionsCount.Should().Be(3);
+            savedResult.SecondsTaken.Should().Be(quiz.TimeTakenInSeconds);
+            savedResult.MaxSeconds.Should().Be(10);
+        }
+
+        [Fact]
+        public void MultipleAnonymousAttempts_EachHasUniqueSessionId()
+        {
+            // Given: Two separate quiz attempts without user authentication
+            var testModelRepository = new TestModelRepository<QuizResult>();
+
+            // First attempt
+            using var quiz1 = new Quiz(3, 10, CreateQuestionSetProvider(), testModelRepository);
+            var sessionId1 = quiz1.SessionId;
+            quiz1.StartQuiz();
+            quiz1.FinishQuiz();
+
+            // Second attempt
+            using var quiz2 = new Quiz(3, 10, CreateQuestionSetProvider(), testModelRepository);
+            var sessionId2 = quiz2.SessionId;
+            quiz2.StartQuiz();
+            quiz2.FinishQuiz();
+
+            // Then: Both results are stored with different session IDs
+            testModelRepository.ModelSet.Should().HaveCount(2);
+            
+            var results = testModelRepository.ModelSet.OrderBy(r => r.TimeStamp).ToList();
+            results[0].SessionId.Should().Be(sessionId1);
+            results[1].SessionId.Should().Be(sessionId2);
+            results[0].SessionId.Should().NotBe(results[1].SessionId, "Each anonymous attempt should have a unique session ID");
+            
+            // Both should have null users
+            results.Should().AllSatisfy(r => r.UserId.Should().BeNull());
         }
 
         [Fact]
