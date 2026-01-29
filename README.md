@@ -192,8 +192,8 @@ Can be hosted in any ASP.NET serving environment.
 ### 📌 Short-term roadmap
 
 - Authentication & user login ✅
-- Database integration for saving results (🔜 planned)
-- User progress history view (🔜 planned)
+- Database integration for saving results (✅)
+- User progress history view (✅)
 
 ### 📌 Medium-term roadmap
 
